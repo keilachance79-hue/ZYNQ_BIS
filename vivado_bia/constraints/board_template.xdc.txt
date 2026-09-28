@@ -1,0 +1,25 @@
+# TEMPLATE ONLY. Not loaded automatically. Replace every placeholder with
+# verified core-board package pins and measured/datasheet timing limits.
+# Do NOT simply map logical names B34_Lxx to package balls.
+#
+# set_property PACKAGE_PIN <MRCC/SRCC_ball> [get_ports meas_clk_0]
+# set_property IOSTANDARD <bank_compatible_standard> [get_ports meas_clk_0]
+# create_clock -name adc_capture -period 97.65625 [get_ports meas_clk_0]
+#
+# ADC A/B bus must be stable on the capture edge of meas_clk. If receiving both
+# with DCOA, constrain and verify both channel interfaces. Otherwise add separate
+# DCOA/DCOB receivers and an explicit sample-index aligner before bia_core.
+# set_input_delay -clock adc_capture -min <...> [get_ports {adc_v_0[*] adc_i_0[*]}]
+# set_input_delay -clock adc_capture -max <...> [get_ports {adc_v_0[*] adc_i_0[*]}]
+#
+# DACCLK is externally supplied by the common clock distributor. Model relative
+# phase and board skew; FPGA falling-edge launch alone does not establish timing.
+# create_clock -name dac_external -period 97.65625 -waveform {<rise> <fall>}
+# set_output_delay -clock dac_external -max <setup_plus_board_skew> [get_ports {dac_data_0[*]}]
+# set_output_delay -clock dac_external -min <negative_hold_plus_board_skew> [get_ports {dac_data_0[*]}]
+#
+# electrodes[4:0]=IP, [9:5]=IN, [14:10]=VP, [19:15]=VN.
+# mux_en is logical active-HIGH. Use a board adapter after verifying actual EN
+# polarity for all four ADG732 chips; the schematic symbol alone is insufficient.
+# fault_in must be driven, never floating. excitation_en needs a real hardware
+# enable/disable path on the analog front end; it does not by itself limit current.
