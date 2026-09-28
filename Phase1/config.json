@@ -1,0 +1,15 @@
+{
+  "fs_hz": 10240000,
+  "rom_length": 2048,
+  "bins": [2, 3, 7, 11, 19, 37, 61, 113, 199],
+  "amplitudes": [1, 1, 1, 1, 1, 1, 1, 1, 1],
+  "seed": 20260928,
+  "restarts": 24,
+  "iterations": 180,
+  "oversample": 8,
+  "headroom": 0.8,
+  "reference_clock_hz": 50000000,
+  "mmcm_divclk": 1,
+  "mmcm_mult": 16.0,
+  "mmcm_out_div": 78.125
+}

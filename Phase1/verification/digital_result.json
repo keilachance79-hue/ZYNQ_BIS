@@ -1,0 +1,80 @@
+{
+  "simulation": "PASS",
+  "synthesis_out_of_context": "PASS",
+  "board_implementation": "NOT_RUN",
+  "bench_measurement": "NOT_RUN",
+  "part": "xc7z020clg400-2",
+  "reference_clock_hz": 50000000,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "vivado": "2020.2",
+  "simulation_markers": {
+    "tb_dac_player": "PHASE1_PLAYER_PASS: non-power-of-two ROM, wrap, startup and midstream reset",
+    "tb_phase1_dac": "PHASE1_TOP_PASS: samples=10270 boundaries=7 min_setup_ns=49.006000 min_hold_ns=48.650000 mean_period_ns=97.656250"
+  },
+  "allowed_ooc_drc": [
+    [
+      "ZPS7-1",
+      "Warning"
+    ]
+  ],
+  "capture_sha256": "78835aa2e74ee902d9e1860f13d62f49b267d5e18e8e9b8bd9bfbdebdea13f88",
+  "waveform_check": {
+    "status": "PASS",
+    "samples": 2048,
+    "frequencies_hz": [
+      10000.0,
+      15000.0,
+      35000.0,
+      55000.0,
+      95000.0,
+      185000.0,
+      305000.0,
+      565000.0,
+      995000.0
+    ],
+    "amplitude_max_error_codes": 0.006978422470638179,
+    "phase_max_error_rad": 4.7449698690194e-06,
+    "max_non_target_bin_peak_codes": 0.037729550697350255,
+    "cf_zero": 3.0411731464937746,
+    "cf_optimized": 2.515710146774067,
+    "reproducible_exports": true,
+    "captured_samples": 10270,
+    "capture_epochs": 2,
+    "mean_periods_ns": [
+      97.65624991891016,
+      97.65624987810826
+    ]
+  },
+  "input_sha256": {
+    "rtl/clock/system_clock_gen.sv": "5ea7974f3be6bceb3b2fecca7f358dc1489251713faaf4c6bc8a9284ae6ea59d",
+    "rtl/dac/dac_player.sv": "e0d4087f04dde5266f44bb41100feaf45899e665ca106b0b927b01bcb4d4b60c",
+    "rtl/dac/ltc1668_if.sv": "cd6ed8827aaf575f675cf700b53719d1b11061be69772e251b5ab4ea65e8dbe4",
+    "rtl/dac/multisine_rom.sv": "d5f456654b4d940422131ee6a1c7ab1d08cd5686fa1c261060ea85dc5c9771ad",
+    "rtl/top/phase1_dac_top.sv": "ba01e283838c813a75f58aaaae0472544d9cd44f36b8b9479c40e8a148868396",
+    "sim/tb_dac_player.sv": "3a063e5bae6233a5f6979a719a1f5466b45835ea38d79a2cd017f0fc644ff754",
+    "sim/tb_phase1_dac.sv": "82d8e252cbe8c484075f5c5c1e3e3a93154625def0b3d5187f371172b1f69c0d",
+    "sim/test_pattern17.hex": "355f8196d9829e91ed3f7e20284ce0d94c7c5d5fd921ca0de9803f4215d47f45",
+    "scripts/check_waveform.py": "8db8a52f00dbaf9ec020c99473e1fa1461b749d9e3dcb3bc24c55f7246b64c32",
+    "scripts/create_project.tcl": "eadbf7779f1d2e9cde6b9a78f94d83dc22fdc246d92e5dad418470eddd4ab597",
+    "scripts/export_verification.py": "e55a044ebb89b7894b60225b001b729dcdf239166282f750eea13e21f7c15e79",
+    "scripts/generate_multisine.py": "cbbea9e630f06f701a65d3473283f0a646defa0898888a6d9ce1ca9b0562ae57",
+    "scripts/run_phase1.ps1": "50ca316f24fe5e579e98d27f4bec01a6e4256a7da395a016f65d726a3e84df6d",
+    "scripts/run_sim.tcl": "b0905b39c2de724994f20a76e904f7316bfe8b17d804a48b82f3fbc074c03fec",
+    "scripts/run_synth.tcl": "4ef327729184aa82c29cb8751884fc89712df177cb585c708b44e216b84447b4",
+    "constraints/phase1_ooc.xdc": "3dec05f79a419c7a6561d8bd776dc5982aebb8e31e48cd294592d630c92243b6",
+    "generated/phase1_clock.xdc": "e3d24596348dc8aff3b0d46054611fbe5ed2c8f6e120e7f5216d1e29e0ec7642",
+    "generated/phase1_config.svh": "4e50a6e59e4bb398b585a6340ac5afcfb9ceafe7ce6eb99f47d27abe1592aa54",
+    "generated/reference.csv": "f744f41ed663fbc985fc248dbc2885e998dd2930808d21bd143566037b8b9d08",
+    "generated/waveform.coe": "c3916c82599625bb8c0ba7bc294ee85e9e7d732f616f828f83a73663cbb56eab",
+    "generated/waveform.hex": "bf31e1a286031a09f77f9c3cd2368f54c65c76f117dda2dd07c84f5e4cb9b317",
+    "generated/waveform_report.json": "ad694b57254d03154cbdd67bef6877aa52198eaf476745d68040e3cb13181c6a",
+    "config.json": "9f45696d5fbb893d60d1e48c63c926fa42566b350483f73c4eb831f7b898eedf"
+  },
+  "limitations": [
+    "PACKAGE_PIN and bank VCCO not confirmed",
+    "PCB skew and oscillator jitter not budgeted",
+    "PS7 integration required before Zynq board implementation",
+    "OOC clock-source location, reset and debug I/O timing pending"
+  ]
+}
