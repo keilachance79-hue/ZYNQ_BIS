@@ -1,0 +1,202 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Sep 28 21:47:09 2026
+| Host         : DESKTOP-B4U18T1 running 64-bit major release  (build 9200)
+| Command      : report_drc -file Y:/Phase2/build/reports/drc_synth.rpt
+| Design       : phase2_capture_top
+| Device       : xc7z020clg400-2
+| Speed File   : -2
+| Design State : Synthesized
+------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: phase2_capture_top
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 33
++--------+----------+------------------------------------------------+------------+
+| Rule   | Severity | Description                                    | Violations |
++--------+----------+------------------------------------------------+------------+
+| PLIO-6 | Warning  | Placement Constraints Check for IO constraints | 32         |
+| ZPS7-1 | Warning  | PS7 block required                             | 1          |
++--------+----------+------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PLIO-6#1 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_a/input_code_reg[0]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#2 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_a/input_code_reg[10]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#3 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_a/input_code_reg[11]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#4 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_a/input_code_reg[12]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#5 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_a/input_code_reg[13]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#6 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_a/input_code_reg[14]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#7 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_a/input_code_reg[15]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#8 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_a/input_code_reg[1]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#9 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_a/input_code_reg[2]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#10 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_a/input_code_reg[3]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#11 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_a/input_code_reg[4]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#12 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_a/input_code_reg[5]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#13 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_a/input_code_reg[6]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#14 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_a/input_code_reg[7]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#15 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_a/input_code_reg[8]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#16 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_a/input_code_reg[9]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#17 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_b/input_code_reg[0]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#18 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_b/input_code_reg[10]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#19 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_b/input_code_reg[11]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#20 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_b/input_code_reg[12]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#21 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_b/input_code_reg[13]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#22 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_b/input_code_reg[14]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#23 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_b/input_code_reg[15]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#24 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_b/input_code_reg[1]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#25 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_b/input_code_reg[2]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#26 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_b/input_code_reg[3]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#27 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_b/input_code_reg[4]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#28 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_b/input_code_reg[5]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#29 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_b/input_code_reg[6]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#30 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_b/input_code_reg[7]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#31 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_b/input_code_reg[8]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+PLIO-6#32 Warning
+Placement Constraints Check for IO constraints  
+Invalid constraint on register rx_b/input_code_reg[9]. It has the property IOB=TRUE, but it is not driving or driven by any IO element.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

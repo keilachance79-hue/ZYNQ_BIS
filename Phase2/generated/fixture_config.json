@@ -1,0 +1,20 @@
+{
+  "n": 2048,
+  "fs_hz": 10240000,
+  "bins": [
+    2,
+    3,
+    7,
+    11,
+    19,
+    37,
+    61,
+    113,
+    199
+  ],
+  "voltage_peak_codes": 1700,
+  "current_peak_codes": 850,
+  "ratio_magnitude": 2,
+  "ratio_phase_rad": 0.3,
+  "note": "Synthetic ADC inputs, not ohms or measured hardware"
+}

@@ -1,0 +1,101 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Sep 28 21:47:08 2026
+| Host         : DESKTOP-B4U18T1 running 64-bit major release  (build 9200)
+| Command      : report_cdc -details -file Y:/Phase2/build/reports/cdc_synth.rpt
+| Design       : phase2_capture_top
+| Device       : 7z020-clg400
+| Speed File   : -2  PRODUCTION 1.12 2019-11-22
+------------------------------------------------------------------------------------
+
+CDC Report
+
+ID      Severity  Count  Description
+------  --------  -----  ----------------------------------------------
+CDC-3   Info          6  1-bit synchronized with ASYNC_REG property
+CDC-6   Warning       2  Multi-bit synchronized with ASYNC_REG property
+CDC-26  Warning      32  LUTRAM read/write potential collision
+
+Source Clock: conversion
+Destination Clock: dco_a
+CDC Type: No Common Primary Clock
+
+Row  ID      Severity  Description                                     Depth  Exception                Source (From)                Destination (To)
+---  ------  --------  ----------------------------------------------  -----  -----------------------  ---------------------------  --------------------------
+  1  CDC-6   Warning   Multi-bit synchronized with ASYNC_REG property      2  Max Delay Datapath Only  conversion_gray_reg[31:0]/C  rx_a/gray_meta_reg[31:0]/D
+  2  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_a[0]                     rx_a/input_code_reg[0]/D
+  3  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_a[1]                     rx_a/input_code_reg[1]/D
+  4  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_a[2]                     rx_a/input_code_reg[2]/D
+  5  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_a[3]                     rx_a/input_code_reg[3]/D
+  6  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_a[4]                     rx_a/input_code_reg[4]/D
+  7  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_a[5]                     rx_a/input_code_reg[5]/D
+  8  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_a[6]                     rx_a/input_code_reg[6]/D
+  9  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_a[7]                     rx_a/input_code_reg[7]/D
+ 10  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_a[8]                     rx_a/input_code_reg[8]/D
+ 11  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_a[9]                     rx_a/input_code_reg[9]/D
+ 12  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_a[10]                    rx_a/input_code_reg[10]/D
+ 13  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_a[11]                    rx_a/input_code_reg[11]/D
+ 14  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_a[12]                    rx_a/input_code_reg[12]/D
+ 15  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_a[13]                    rx_a/input_code_reg[13]/D
+ 16  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_a[14]                    rx_a/input_code_reg[14]/D
+ 17  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_a[15]                    rx_a/input_code_reg[15]/D
+
+Source Clock: dsp
+Destination Clock: dco_a
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                 Depth  Exception   Source (From)                                                                                       Destination (To)
+---  -----  --------  ------------------------------------------  -----  ----------  --------------------------------------------------------------------------------------------------  -----------------------------------------------------------------------------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  rx_a/fifo_i/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.fifo_rd_rst_ic_reg/C  rx_a/fifo_i/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst/syncstages_ff_reg[0]/D
+
+Source Clock: conversion
+Destination Clock: dco_b
+CDC Type: No Common Primary Clock
+
+Row  ID      Severity  Description                                     Depth  Exception                Source (From)                Destination (To)
+---  ------  --------  ----------------------------------------------  -----  -----------------------  ---------------------------  --------------------------
+  1  CDC-6   Warning   Multi-bit synchronized with ASYNC_REG property      2  Max Delay Datapath Only  conversion_gray_reg[31:0]/C  rx_b/gray_meta_reg[31:0]/D
+  2  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_b[0]                     rx_b/input_code_reg[0]/D
+  3  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_b[1]                     rx_b/input_code_reg[1]/D
+  4  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_b[2]                     rx_b/input_code_reg[2]/D
+  5  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_b[3]                     rx_b/input_code_reg[3]/D
+  6  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_b[4]                     rx_b/input_code_reg[4]/D
+  7  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_b[5]                     rx_b/input_code_reg[5]/D
+  8  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_b[6]                     rx_b/input_code_reg[6]/D
+  9  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_b[7]                     rx_b/input_code_reg[7]/D
+ 10  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_b[8]                     rx_b/input_code_reg[8]/D
+ 11  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_b[9]                     rx_b/input_code_reg[9]/D
+ 12  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_b[10]                    rx_b/input_code_reg[10]/D
+ 13  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_b[11]                    rx_b/input_code_reg[11]/D
+ 14  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_b[12]                    rx_b/input_code_reg[12]/D
+ 15  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_b[13]                    rx_b/input_code_reg[13]/D
+ 16  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_b[14]                    rx_b/input_code_reg[14]/D
+ 17  CDC-26  Warning   LUTRAM read/write potential collision               0  None                     adc_b[15]                    rx_b/input_code_reg[15]/D
+
+Source Clock: dsp
+Destination Clock: dco_b
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                 Depth  Exception   Source (From)                                                                                       Destination (To)
+---  -----  --------  ------------------------------------------  -----  ----------  --------------------------------------------------------------------------------------------------  -----------------------------------------------------------------------------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  rx_b/fifo_i/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.fifo_rd_rst_ic_reg/C  rx_b/fifo_i/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.rrst_wr_inst/syncstages_ff_reg[0]/D
+
+Source Clock: dco_a
+Destination Clock: dsp
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                 Depth  Exception   Source (From)                                                                                       Destination (To)
+---  -----  --------  ------------------------------------------  -----  ----------  --------------------------------------------------------------------------------------------------  -----------------------------------------------------------------------------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  rx_a/overflow_sticky_reg/C                                                                          overflow_meta_reg[0]/D
+  2  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  rx_a/fifo_i/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.fifo_wr_rst_ic_reg/C  rx_a/fifo_i/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst/syncstages_ff_reg[0]/D
+
+Source Clock: dco_b
+Destination Clock: dsp
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                 Depth  Exception   Source (From)                                                                                       Destination (To)
+---  -----  --------  ------------------------------------------  -----  ----------  --------------------------------------------------------------------------------------------------  -----------------------------------------------------------------------------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  rx_b/overflow_sticky_reg/C                                                                          overflow_meta_reg[1]/D
+  2  CDC-3  Info      1-bit synchronized with ASYNC_REG property      2  False Path  rx_b/fifo_i/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.fifo_wr_rst_ic_reg/C  rx_b/fifo_i/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/gen_rst_ic.wrst_rd_inst/syncstages_ff_reg[0]/D
+

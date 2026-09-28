@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "paired_samples": 8192,
+  "frames": [
+    {
+      "session": 1,
+      "frame_id": 10,
+      "start_tick": 2048,
+      "samples": 2048,
+      "bytes": 8192,
+      "file": "raw_s1_f10.bin",
+      "sha256": "6e2c415204258b918cab83060ec2c16d55d680e24307d8a30c55293f1406d8fe"
+    },
+    {
+      "session": 1,
+      "frame_id": 11,
+      "start_tick": 6144,
+      "samples": 2048,
+      "bytes": 8192,
+      "file": "raw_s1_f11.bin",
+      "sha256": "162be0baa5f3b0d95471fbf2e1f62e8920b7311fe882e6fb34070c72c251acd5"
+    },
+    {
+      "session": 2,
+      "frame_id": 20,
+      "start_tick": 2048,
+      "samples": 2048,
+      "bytes": 8192,
+      "file": "raw_s2_f20.bin",
+      "sha256": "b93923003c34baf1c29ae7cffcd90c2b1e3901d61ad907cf0928dc5844062ec4"
+    },
+    {
+      "session": 10,
+      "frame_id": 81,
+      "start_tick": 2048,
+      "samples": 2048,
+      "bytes": 8192,
+      "file": "raw_s10_f81.bin",
+      "sha256": "6e2c415204258b918cab83060ec2c16d55d680e24307d8a30c55293f1406d8fe"
+    }
+  ],
+  "fft": [
+    {
+      "frame_id": 20,
+      "frequencies_hz": [
+        10000.0,
+        15000.0,
+        35000.0,
+        55000.0,
+        95000.0,
+        185000.0,
+        305000.0,
+        565000.0,
+        995000.0
+      ],
+      "ratio_magnitude": [
+        1.9999745542633625,
+        1.9999570754973461,
+        1.9999861835268493,
+        1.9999916689962434,
+        1.999977982687925,
+        2.000007482106818,
+        1.9999717469558713,
+        1.999999868368423,
+        2.000057471337788
+      ],
+      "ratio_phase_rad": [
+        0.3000043184021879,
+        0.29998963765392717,
+        0.2999955675045827,
+        0.2999834730889701,
+        0.2999871126100761,
+        0.29999297412587356,
+        0.300000318416341,
+        0.299994984447818,
+        0.30001799404464174
+      ],
+      "max_magnitude_error": 5.747133778788438e-05,
+      "max_phase_error_rad": 1.7994044641755913e-05
+    }
+  ],
+  "hardware_ps_dma": "NOT_RUN",
+  "units": "signed ADC codes; ratio is not calibrated ohms"
+}

@@ -1,0 +1,69 @@
+{
+  "stage": "Phase2 digital prototype",
+  "simulation": "PASS",
+  "reference_export_fft": "PASS",
+  "synthesis_out_of_context": "PASS",
+  "synthetic_constraints_timing": "PASS",
+  "board_cdc_timing": "NOT_SIGNED_OFF",
+  "board_implementation": "NOT_RUN",
+  "ps_dma": "NOT_RUN",
+  "bench": "NOT_RUN",
+  "simulation_marker": "PHASE2_CAPTURE_PASS: scenarios=10 frames=4 paired_words=8192",
+  "tools": {
+    "vivado": "2020.2",
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "cdc_findings": [
+    [
+      "CDC-3",
+      "Info",
+      "6",
+      "1-bit synchronized with ASYNC_REG property"
+    ],
+    [
+      "CDC-6",
+      "Warning",
+      "2",
+      "Multi-bit synchronized with ASYNC_REG property"
+    ],
+    [
+      "CDC-26",
+      "Warning",
+      "32",
+      "LUTRAM read/write potential collision"
+    ]
+  ],
+  "drc_warning_counts": {
+    "PLIO-6": 32,
+    "ZPS7-1": 1
+  },
+  "capture_sha256": "cb9e85fddd6cf6a28e5570569db7b1038ae57bee6e9ac2bcffad6c20a5f6c9da",
+  "input_sha256": {
+    "rtl/adc_channel_rx.sv": "31e817f870e90f41fe708809576d72ae9f368da94bb46fb00dbeacf8400e69bf",
+    "rtl/adc_frame_buffer.sv": "02758e5b52fa3661a927ffb57de6c1f5a73116a8a090cc80c647f1fe9f5b1c46",
+    "rtl/phase2_capture_top.sv": "94707e1fd048ab602eecc94cfd8a163fba521581f448c1366bd7b52b39039140",
+    "sim/tb_phase2_capture.sv": "4e41a7bfd17b92d0b86cf94bf931e28d75afd1b117290a3880819e1c992d05a0",
+    "scripts/analyze_raw.py": "4039e8722fbf4bbf24d93af315c6ed661e43cf26608ca4420aecf0b237be869f",
+    "scripts/check_capture.py": "59c8a276866505e3c9b9d6b8e89a08ccad346765f025630e2a8797694f20407a",
+    "scripts/check_device_pins.tcl": "d1f2f558f29e43f15eec396db079448085a4fa4f939b18868bb852e52f38488b",
+    "scripts/create_project.tcl": "2d9ce4f5aad7218c92f162a467e72a53ccc981bb82393811322806785b1a8ac0",
+    "scripts/export_verification.py": "09e04ab77b1a857080b6c59f3bd2a2752b0bd0036b90b01d712e8f24c3442fd2",
+    "scripts/generate_fixtures.py": "75e4e850c7c3d7938322f3221a67cf7899d207f834e06e335852cdf227f4eb4d",
+    "scripts/run_phase2.ps1": "62ad6ccfac2539d0a5cad31bc76a3b8c1770e91041f6bb8c1ca6cee65268ef99",
+    "scripts/run_sim.tcl": "e68ccce2b98e469ca71033ce7b9a0e54a3e6e6ead0a6a2997b2f420488aa020d",
+    "scripts/run_synth.tcl": "d957de88a33f5055611c157838135ae4d22d9e7f2ae899c58ba95aea51c1bdc5",
+    "constraints/digital_ooc.xdc": "6000a9fb1dabd6c2dfaa9338d0243a181180346108e1d75b1248201728f6ce9f",
+    "generated/fixture_config.json": "2ecad1a8b9c25fdfd634004f4154f6f0f19b1611291f5d08c2aac6a40242f9c3",
+    "generated/input_a.hex": "731e936fa3baf19325ba11a54e181022d4e736126d56ab0afb73cc97e442e69a",
+    "generated/input_b.hex": "e4c2d046451e42dc2d0df2319af3ba062955b432fea4c58bc3a996b2631ba112"
+  },
+  "phase1_reference_sha256": "ad694b57254d03154cbdd67bef6877aa52198eaf476745d68040e3cb13181c6a",
+  "unresolved": [
+    "non-clock-capable DCO pins",
+    "ADC clock electrical driver and U13 pulldown",
+    "RBIAS value and ADC B nets",
+    "calibrated per-channel epoch and DAC phase origin",
+    "board clock/reset timing, PS7 platform and actual raw transport"
+  ]
+}
