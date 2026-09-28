@@ -1,0 +1,654 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Sep 28 21:19:27 2026
+| Host         : DESKTOP-B4U18T1 running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -file Z:/build/reports/timing_synth.rpt
+| Design       : phase1_dac_top
+| Device       : 7z020-clg400
+| Speed File   : -2  PRODUCTION 1.12 2019-11-22
+------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (1)
+6. checking no_output_delay (14)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (1)
+------------------------------
+ There is 1 input port with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (14)
+--------------------------------
+ There are 13 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There is 1 port with no output delay but with a timing clock defined on it or propagating through it (LOW)
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     40.536        0.000                      0                  157        0.037        0.000                      0                  157        7.000        0.000                       0                    76  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock            Waveform(ns)       Period(ns)      Frequency(MHz)
+-----            ------------       ----------      --------------
+ref_clk          {0.000 10.000}     20.000          50.000          
+  feedback_raw   {0.000 10.000}     20.000          50.000          
+  sample_raw     {0.000 48.828}     97.656          10.240          
+    dac_forward  {0.000 48.828}     97.656          10.240          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock               WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----               -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+ref_clk                                                                                                                                                           7.000        0.000                       0                     1  
+  feedback_raw                                                                                                                                                   18.408        0.000                       0                     3  
+  sample_raw         45.766        0.000                      0                  100        0.037        0.000                      0                  100       48.328        0.000                       0                    72  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+sample_raw    dac_forward        40.536        0.000                      0                   16       44.479        0.000                      0                   16  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group         From Clock         To Clock               WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------         ----------         --------               -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+**async_default**  sample_raw         sample_raw              46.685        0.000                      0                   41        0.675        0.000                      0                   41  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  ref_clk
+  To Clock:  ref_clk
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        7.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         ref_clk
+Waveform(ns):       { 0.000 10.000 }
+Period(ns):         20.000
+Sources:            { ref_clk }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
+Min Period        n/a     MMCME2_ADV/CLKIN1  n/a            1.249         20.000      18.751               clock_i/mmcm_i/CLKIN1
+Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       20.000      80.000               clock_i/mmcm_i/CLKIN1
+Low Pulse Width   Fast    MMCME2_ADV/CLKIN1  n/a            3.000         10.000      7.000                clock_i/mmcm_i/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            3.000         10.000      7.000                clock_i/mmcm_i/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  feedback_raw
+  To Clock:  feedback_raw
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack       18.408ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         feedback_raw
+Waveform(ns):       { 0.000 10.000 }
+Period(ns):         20.000
+Sources:            { clock_i/mmcm_i/CLKFBOUT }
+
+Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
+Min Period  n/a     BUFG/I              n/a            1.592         20.000      18.408               clock_i/feedback_i/I
+Max Period  n/a     MMCME2_ADV/CLKFBIN  n/a            100.000       20.000      80.000               clock_i/mmcm_i/CLKFBIN
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sample_raw
+  To Clock:  sample_raw
+
+Setup :            0  Failing Endpoints,  Worst Slack       45.766ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.037ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack       48.328ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             45.766ns  (required time - arrival time)
+  Source:                 player_i/rom_i/data_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sample_raw  {rise@0.000ns fall@48.828ns period=97.656ns})
+  Destination:            dac_i/dac_data_reg[12]/D
+                            (falling edge-triggered cell FDCE clocked by sample_raw  {rise@0.000ns fall@48.828ns period=97.656ns})
+  Path Group:             sample_raw
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            48.828ns  (sample_raw fall@48.828ns - sample_raw rise@0.000ns)
+  Data Path Delay:        2.896ns  (logic 2.250ns (77.705%)  route 0.646ns (22.295%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.748ns = ( 49.576 - 48.828 ) 
+    Source Clock Delay      (SCD):    0.787ns
+    Clock Pessimism Removal (CPR):    -0.106ns
+  Clock Uncertainty:      0.069ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.118ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sample_raw rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  ref_clk (IN)
+                         net (fo=0)                   0.787     0.787    clock_i/ref_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.315    -0.528 r  clock_i/mmcm_i/CLKOUT0
+                         net (fo=1, unplaced)         0.646     0.118    clock_i/sample_raw
+                         BUFG (Prop_bufg_I_O)         0.085     0.203 r  clock_i/sample_buffer_i/O
+                         net (fo=70, unplaced)        0.584     0.787    player_i/rom_i/CLK
+                         RAMB36E1                                     r  player_i/rom_i/data_reg/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+                         RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[12])
+                                                      2.125     2.912 r  player_i/rom_i/data_reg/DOADO[12]
+                         net (fo=1, unplaced)         0.646     3.558    player_i/rom_i/rom_data[12]
+                         LUT2 (Prop_lut2_I0_O)        0.125     3.683 r  player_i/rom_i/dac_data[12]_i_1/O
+                         net (fo=1, unplaced)         0.000     3.683    dac_i/D[12]
+                         FDCE                                         r  dac_i/dac_data_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sample_raw fall edge)
+                                                     48.828    48.828 f  
+                                                      0.000    48.828 f  ref_clk (IN)
+                         net (fo=0)                   0.748    49.576    clock_i/ref_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.129    48.446 f  clock_i/mmcm_i/CLKOUT0
+                         net (fo=1, unplaced)         0.613    49.060    clock_i/sample_raw
+                         BUFG (Prop_bufg_I_O)         0.077    49.137 f  clock_i/sample_buffer_i/O
+                         net (fo=70, unplaced)        0.439    49.576    dac_i/CLK
+                         FDCE                                         r  dac_i/dac_data_reg[12]/C  (IS_INVERTED)
+                         clock pessimism             -0.106    49.470    
+                         clock uncertainty           -0.069    49.401    
+                         FDCE (Setup_fdce_C_D)        0.047    49.448    dac_i/dac_data_reg[12]
+  -------------------------------------------------------------------
+                         required time                         49.448    
+                         arrival time                          -3.683    
+  -------------------------------------------------------------------
+                         slack                                 45.766    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.037ns  (arrival time - required time)
+  Source:                 clock_i/reset_release_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by sample_raw  {rise@0.000ns fall@48.828ns period=97.656ns})
+  Destination:            clock_i/reset_release_reg[1]/D
+                            (rising edge-triggered cell FDCE clocked by sample_raw  {rise@0.000ns fall@48.828ns period=97.656ns})
+  Path Group:             sample_raw
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sample_raw rise@0.000ns - sample_raw rise@0.000ns)
+  Data Path Delay:        0.220ns  (logic 0.147ns (66.849%)  route 0.073ns (33.151%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.411ns
+    Source Clock Delay      (SCD):    0.390ns
+    Clock Pessimism Removal (CPR):    -0.124ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sample_raw rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  ref_clk (IN)
+                         net (fo=0)                   0.390     0.390    clock_i/ref_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -0.460    -0.070 r  clock_i/mmcm_i/CLKOUT0
+                         net (fo=1, unplaced)         0.320     0.250    clock_i/sample_raw
+                         BUFG (Prop_bufg_I_O)         0.026     0.276 r  clock_i/sample_buffer_i/O
+                         net (fo=70, unplaced)        0.114     0.390    clock_i/CLK
+                         FDCE                                         r  clock_i/reset_release_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.147     0.537 r  clock_i/reset_release_reg[0]/Q
+                         net (fo=1, unplaced)         0.073     0.610    clock_i/reset_release[0]
+                         FDCE                                         r  clock_i/reset_release_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sample_raw rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  ref_clk (IN)
+                         net (fo=0)                   0.411     0.411    clock_i/ref_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -0.625    -0.214 r  clock_i/mmcm_i/CLKOUT0
+                         net (fo=1, unplaced)         0.337     0.123    clock_i/sample_raw
+                         BUFG (Prop_bufg_I_O)         0.029     0.152 r  clock_i/sample_buffer_i/O
+                         net (fo=70, unplaced)        0.259     0.411    clock_i/CLK
+                         FDCE                                         r  clock_i/reset_release_reg[1]/C
+                         clock pessimism              0.124     0.535    
+                         FDCE (Hold_fdce_C_D)         0.038     0.573    clock_i/reset_release_reg[1]
+  -------------------------------------------------------------------
+                         required time                         -0.573    
+                         arrival time                           0.610    
+  -------------------------------------------------------------------
+                         slack                                  0.037    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sample_raw
+Waveform(ns):       { 0.000 48.828 }
+Period(ns):         97.656
+Sources:            { clock_i/mmcm_i/CLKOUT0 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.170         97.656      95.486               player_i/rom_i/data_reg/CLKARDCLK
+Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       97.656      115.704              clock_i/mmcm_i/CLKOUT0
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         48.828      48.328               dac_i/dac_data_reg[10]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         48.828      48.328               clock_i/reset_release_reg[0]/C
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sample_raw
+  To Clock:  dac_forward
+
+Setup :            0  Failing Endpoints,  Worst Slack       40.536ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack       44.479ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             40.536ns  (required time - arrival time)
+  Source:                 dac_i/dac_data_reg[0]/C
+                            (falling edge-triggered cell FDCE clocked by sample_raw  {rise@0.000ns fall@48.828ns period=97.656ns})
+  Destination:            dac_data[0]
+                            (output port clocked by dac_forward  {rise@0.000ns fall@48.828ns period=97.656ns})
+  Path Group:             dac_forward
+  Path Type:              Max at Slow Process Corner
+  Requirement:            48.828ns  (dac_forward rise@97.656ns - sample_raw fall@48.828ns)
+  Data Path Delay:        1.189ns  (logic 0.402ns (33.810%)  route 0.787ns (66.190%))
+  Logic Levels:           0  
+  Output Delay:           8.000ns
+  Clock Path Skew:        0.966ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.858ns = ( 99.515 - 97.656 ) 
+    Source Clock Delay      (SCD):    0.787ns = ( 49.615 - 48.828 ) 
+    Clock Pessimism Removal (CPR):    -0.106ns
+  Clock Uncertainty:      0.069ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.118ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sample_raw fall edge)
+                                                     48.828    48.828 f  
+                                                      0.000    48.828 f  ref_clk (IN)
+                         net (fo=0)                   0.787    49.615    clock_i/ref_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.315    48.301 f  clock_i/mmcm_i/CLKOUT0
+                         net (fo=1, unplaced)         0.646    48.946    clock_i/sample_raw
+                         BUFG (Prop_bufg_I_O)         0.085    49.031 f  clock_i/sample_buffer_i/O
+                         net (fo=70, unplaced)        0.584    49.615    dac_i/CLK
+                         FDCE                                         r  dac_i/dac_data_reg[0]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.402    50.017 r  dac_i/dac_data_reg[0]/Q
+                         net (fo=0)                   0.787    50.804    dac_data[0]
+                                                                      r  dac_data[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock dac_forward rise edge)
+                                                     97.656    97.656 f  
+                                                      0.000    97.656 f  ref_clk (IN)
+                         net (fo=0)                   0.748    98.404    clock_i/ref_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.129    97.275 f  clock_i/mmcm_i/CLKOUT0
+                         net (fo=1, unplaced)         0.613    97.888    clock_i/sample_raw
+                         BUFG (Prop_bufg_I_O)         0.077    97.965 f  clock_i/sample_buffer_i/O
+                         net (fo=70, unplaced)        0.439    98.404    dac_i/CLK
+                         ODDR (Prop_oddr_C_Q)         0.363    98.767 r  dac_i/forward_clock_i/Q
+                         net (fo=0)                   0.748    99.515    dac_clk
+                                                                      r  dac_clk (OUT)
+                         clock pessimism             -0.106    99.409    
+                         clock uncertainty           -0.069    99.340    
+                         output delay                -8.000    91.340    
+  -------------------------------------------------------------------
+                         required time                         91.340    
+                         arrival time                         -50.804    
+  -------------------------------------------------------------------
+                         slack                                 40.536    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             44.479ns  (arrival time - required time)
+  Source:                 dac_i/dac_data_reg[0]/C
+                            (falling edge-triggered cell FDCE clocked by sample_raw  {rise@0.000ns fall@48.828ns period=97.656ns})
+  Destination:            dac_data[0]
+                            (output port clocked by dac_forward  {rise@0.000ns fall@48.828ns period=97.656ns})
+  Path Group:             dac_forward
+  Path Type:              Min at Slow Process Corner
+  Requirement:            -48.828ns  (dac_forward rise@0.000ns - sample_raw fall@48.828ns)
+  Data Path Delay:        1.070ns  (logic 0.322ns (30.103%)  route 0.748ns (69.897%))
+  Logic Levels:           0  
+  Output Delay:           -4.000ns
+  Clock Path Skew:        1.350ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.992ns
+    Source Clock Delay      (SCD):    0.748ns = ( 49.576 - 48.828 ) 
+    Clock Pessimism Removal (CPR):    -0.106ns
+  Clock Uncertainty:      0.069ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.118ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sample_raw fall edge)
+                                                     48.828    48.828 f  
+                                                      0.000    48.828 f  ref_clk (IN)
+                         net (fo=0)                   0.748    49.576    clock_i/ref_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.129    48.446 f  clock_i/mmcm_i/CLKOUT0
+                         net (fo=1, unplaced)         0.613    49.060    clock_i/sample_raw
+                         BUFG (Prop_bufg_I_O)         0.077    49.137 f  clock_i/sample_buffer_i/O
+                         net (fo=70, unplaced)        0.439    49.576    dac_i/CLK
+                         FDCE                                         r  dac_i/dac_data_reg[0]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.322    49.898 r  dac_i/dac_data_reg[0]/Q
+                         net (fo=0)                   0.748    50.645    dac_data[0]
+                                                                      r  dac_data[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock dac_forward rise edge)
+                                                      0.000     0.000 f  
+                                                      0.000     0.000 f  ref_clk (IN)
+                         net (fo=0)                   0.787     0.787    clock_i/ref_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.315    -0.528 f  clock_i/mmcm_i/CLKOUT0
+                         net (fo=1, unplaced)         0.646     0.118    clock_i/sample_raw
+                         BUFG (Prop_bufg_I_O)         0.085     0.203 f  clock_i/sample_buffer_i/O
+                         net (fo=70, unplaced)        0.584     0.787    dac_i/CLK
+                         ODDR (Prop_oddr_C_Q)         0.418     1.205 r  dac_i/forward_clock_i/Q
+                         net (fo=0)                   0.787     1.992    dac_clk
+                                                                      r  dac_clk (OUT)
+                         clock pessimism              0.106     2.098    
+                         clock uncertainty            0.069     2.167    
+                         output delay                 4.000     6.167    
+  -------------------------------------------------------------------
+                         required time                         -6.167    
+                         arrival time                          50.645    
+  -------------------------------------------------------------------
+                         slack                                 44.479    
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+Path Group:  **async_default**
+From Clock:  sample_raw
+  To Clock:  sample_raw
+
+Setup :            0  Failing Endpoints,  Worst Slack       46.685ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.675ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             46.685ns  (required time - arrival time)
+  Source:                 clock_i/reset_release_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by sample_raw  {rise@0.000ns fall@48.828ns period=97.656ns})
+  Destination:            dac_i/dac_data_reg[15]/PRE
+                            (recovery check against rising-edge clock sample_raw  {rise@0.000ns fall@48.828ns period=97.656ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            48.828ns  (sample_raw fall@48.828ns - sample_raw rise@0.000ns)
+  Data Path Delay:        1.612ns  (logic 0.629ns (39.020%)  route 0.983ns (60.980%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        -0.145ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.748ns = ( 49.576 - 48.828 ) 
+    Source Clock Delay      (SCD):    0.787ns
+    Clock Pessimism Removal (CPR):    -0.106ns
+  Clock Uncertainty:      0.069ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.118ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sample_raw rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  ref_clk (IN)
+                         net (fo=0)                   0.787     0.787    clock_i/ref_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.315    -0.528 r  clock_i/mmcm_i/CLKOUT0
+                         net (fo=1, unplaced)         0.646     0.118    clock_i/sample_raw
+                         BUFG (Prop_bufg_I_O)         0.085     0.203 r  clock_i/sample_buffer_i/O
+                         net (fo=70, unplaced)        0.584     0.787    clock_i/CLK
+                         FDCE                                         r  clock_i/reset_release_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.397     1.184 r  clock_i/reset_release_reg[3]/Q
+                         net (fo=2, unplaced)         0.251     1.435    clock_i/reset_release[3]
+                         LUT1 (Prop_lut1_I0_O)        0.232     1.667 f  clock_i/dac_data[15]_i_2/O
+                         net (fo=63, unplaced)        0.732     2.399    dac_i/SR[0]
+                         FDPE                                         f  dac_i/dac_data_reg[15]/PRE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sample_raw fall edge)
+                                                     48.828    48.828 f  
+                                                      0.000    48.828 f  ref_clk (IN)
+                         net (fo=0)                   0.748    49.576    clock_i/ref_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.129    48.446 f  clock_i/mmcm_i/CLKOUT0
+                         net (fo=1, unplaced)         0.613    49.060    clock_i/sample_raw
+                         BUFG (Prop_bufg_I_O)         0.077    49.137 f  clock_i/sample_buffer_i/O
+                         net (fo=70, unplaced)        0.439    49.576    dac_i/CLK
+                         FDPE                                         r  dac_i/dac_data_reg[15]/C  (IS_INVERTED)
+                         clock pessimism             -0.106    49.470    
+                         clock uncertainty           -0.069    49.401    
+                         FDPE (Recov_fdpe_C_PRE)     -0.317    49.084    dac_i/dac_data_reg[15]
+  -------------------------------------------------------------------
+                         required time                         49.084    
+                         arrival time                          -2.399    
+  -------------------------------------------------------------------
+                         slack                                 46.685    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.675ns  (arrival time - required time)
+  Source:                 clock_i/reset_release_reg[3]/C
+                            (rising edge-triggered cell FDCE clocked by sample_raw  {rise@0.000ns fall@48.828ns period=97.656ns})
+  Destination:            dac_i/period_start_reg/CLR
+                            (removal check against rising-edge clock sample_raw  {rise@0.000ns fall@48.828ns period=97.656ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sample_raw rise@0.000ns - sample_raw rise@0.000ns)
+  Data Path Delay:        0.732ns  (logic 0.245ns (33.448%)  route 0.487ns (66.552%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        0.145ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.411ns
+    Source Clock Delay      (SCD):    0.390ns
+    Clock Pessimism Removal (CPR):    -0.124ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sample_raw rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  ref_clk (IN)
+                         net (fo=0)                   0.390     0.390    clock_i/ref_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -0.460    -0.070 r  clock_i/mmcm_i/CLKOUT0
+                         net (fo=1, unplaced)         0.320     0.250    clock_i/sample_raw
+                         BUFG (Prop_bufg_I_O)         0.026     0.276 r  clock_i/sample_buffer_i/O
+                         net (fo=70, unplaced)        0.114     0.390    clock_i/CLK
+                         FDCE                                         r  clock_i/reset_release_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.147     0.537 r  clock_i/reset_release_reg[3]/Q
+                         net (fo=2, unplaced)         0.124     0.662    clock_i/reset_release[3]
+                         LUT1 (Prop_lut1_I0_O)        0.098     0.760 f  clock_i/dac_data[15]_i_2/O
+                         net (fo=63, unplaced)        0.363     1.123    dac_i/SR[0]
+                         FDCE                                         f  dac_i/period_start_reg/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sample_raw rise edge)
+                                                      0.000     0.000 r  
+                                                      0.000     0.000 r  ref_clk (IN)
+                         net (fo=0)                   0.411     0.411    clock_i/ref_clk
+                         MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -0.625    -0.214 r  clock_i/mmcm_i/CLKOUT0
+                         net (fo=1, unplaced)         0.337     0.123    clock_i/sample_raw
+                         BUFG (Prop_bufg_I_O)         0.029     0.152 r  clock_i/sample_buffer_i/O
+                         net (fo=70, unplaced)        0.259     0.411    dac_i/CLK
+                         FDCE                                         r  dac_i/period_start_reg/C
+                         clock pessimism              0.124     0.535    
+                         FDCE (Remov_fdce_C_CLR)     -0.088     0.447    dac_i/period_start_reg
+  -------------------------------------------------------------------
+                         required time                         -0.447    
+                         arrival time                           1.123    
+  -------------------------------------------------------------------
+                         slack                                  0.675    
+
+
+
+
+

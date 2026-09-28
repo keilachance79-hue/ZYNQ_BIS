@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "samples": 2048,
+  "frequencies_hz": [
+    10000.0,
+    15000.0,
+    35000.0,
+    55000.0,
+    95000.0,
+    185000.0,
+    305000.0,
+    565000.0,
+    995000.0
+  ],
+  "amplitude_max_error_codes": 0.006978422470638179,
+  "phase_max_error_rad": 4.7449698690194e-06,
+  "max_non_target_bin_peak_codes": 0.037729550697350255,
+  "cf_zero": 3.0411731464937746,
+  "cf_optimized": 2.515710146774067,
+  "reproducible_exports": true,
+  "captured_samples": 10270,
+  "capture_epochs": 2,
+  "mean_periods_ns": [
+    97.65624991891016,
+    97.65624987810826
+  ]
+}
