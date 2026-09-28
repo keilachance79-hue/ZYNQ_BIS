@@ -1,0 +1,14 @@
+# Local scratch, unrelated analog experiments, and generated build products.
+/tmp/
+/output/
+/AD830*
+/slva933.pdf
+/vivado_bia/build/
+/vivado_bia/.Xil/
+/vivado_bia/*_console.txt
+/vivado_bia/sin1024.mem
+*.log
+*.jou
+*.str
+__pycache__/
+*.pyc
