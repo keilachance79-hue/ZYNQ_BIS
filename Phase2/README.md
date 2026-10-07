@@ -6,6 +6,8 @@
 
 ## 数据路径
 
+2026-10-07 新增 [EDA 原工程核对](docs/eda_audit_2026-10-07.md)：32 位 ADC 数据在 PCB 网络记录中互相独立，B12–B15 的网络分配歧义已关闭；R148=510 kΩ 获器件料号支持，CLK± 直连和 DCO 资源问题仍待解决。
+
 ```text
 conversion_clk -> 32-bit registered Gray timestamp
                                      |
@@ -73,4 +75,4 @@ python Phase2/scripts/analyze_raw.py path/to/payload.bin --output spectrum.json
 
 ## 下一阶段入口
 
-先解决 ADC 时钟电气接口、RBIAS、B 通道可疑连线、DCO 接收资源与实际 epoch 校准，再完成板级时序/CDC、PS 调试传输和同源双路台架测试。Phase2 整体验收仍未完成，Phase3 尚未开始。
+先解决 ADC 时钟电气接口、RBIAS、连接器实物核验、DCO 接收资源与实际 epoch 校准，再完成板级时序/CDC、PS 调试传输和同源双路台架测试。Phase2 整体验收仍未完成，Phase3 尚未开始。

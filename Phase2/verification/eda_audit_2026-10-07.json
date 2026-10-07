@@ -1,0 +1,1239 @@
+{
+  "source_name": "ProPrj_zynq底板_2026-10-07.epro2",
+  "source_sha256": "fca3bc7e851741406f6394ad9d7fc3d7d059038d3c7da6f4d0d54c223384a769",
+  "board": {
+    "uuid": "ab157d633e1e4969",
+    "title": "3V3-ADC",
+    "zIndex": 2
+  },
+  "schematic_uuid": "86cefc97253543df82bc371d1071ae42",
+  "pcb_uuid": "585f0d4e5ddb4537b2b87cf8e89f1097",
+  "method": "Final record state after replay; PCB PAD_NET assignments, not copper connectivity or vendor ERC/DRC.",
+  "line_numbers": "One-based lines in the sole .epru ZIP member.",
+  "r148": {
+    "Value": {
+      "value": "510kΩ",
+      "line": 64836
+    },
+    "Tolerance": {
+      "value": "±1%",
+      "line": 69100
+    },
+    "Manufacturer Part": {
+      "value": "RMC0603510K1%N",
+      "line": 69095
+    },
+    "Supplier Part": {
+      "value": "C325622",
+      "line": 69093
+    },
+    "Device": {
+      "value": "0017d29241ac1f3b",
+      "line": 69105
+    }
+  },
+  "rbias_net": {
+    "name": "$3N33699",
+    "endpoints": [
+      {
+        "component": "U64",
+        "pin": "58",
+        "line": 108437
+      },
+      {
+        "component": "R148",
+        "pin": "1",
+        "line": 111452
+      }
+    ]
+  },
+  "controls": {
+    "CLK+": {
+      "pcb_net": "B34_L3N",
+      "endpoints": [
+        {
+          "component": "CN1",
+          "pin": "74",
+          "line": 106779
+        },
+        {
+          "component": "U64",
+          "pin": "1",
+          "line": 108384
+        }
+      ]
+    },
+    "CLK-": {
+      "pcb_net": "B34_L3P",
+      "endpoints": [
+        {
+          "component": "CN1",
+          "pin": "73",
+          "line": 106780
+        },
+        {
+          "component": "U64",
+          "pin": "2",
+          "line": 108385
+        }
+      ]
+    },
+    "DCOA": {
+      "pcb_net": "B13_L15N",
+      "endpoints": [
+        {
+          "component": "CN1",
+          "pin": "61",
+          "line": 106792
+        },
+        {
+          "component": "U64",
+          "pin": "24",
+          "line": 108396
+        }
+      ]
+    },
+    "DCOB": {
+      "pcb_net": "B13_L17N",
+      "endpoints": [
+        {
+          "component": "CN1",
+          "pin": "62",
+          "line": 106791
+        },
+        {
+          "component": "U64",
+          "pin": "23",
+          "line": 108395
+        }
+      ]
+    }
+  },
+  "adc_paths": [
+    {
+      "channel": "A",
+      "bit": 0,
+      "adc_net": "ADC0A",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "25",
+          "line": 108403
+        },
+        {
+          "component": "R195",
+          "pin": "2",
+          "line": 109974
+        }
+      ],
+      "series_resistor": "R195",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 67491
+      },
+      "connector_net": "B34_L20N",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "83",
+          "line": 106770
+        },
+        {
+          "component": "R195",
+          "pin": "1",
+          "line": 109975
+        }
+      ]
+    },
+    {
+      "channel": "A",
+      "bit": 1,
+      "adc_net": "ADC1A",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "26",
+          "line": 108404
+        },
+        {
+          "component": "R196",
+          "pin": "2",
+          "line": 109980
+        }
+      ],
+      "series_resistor": "R196",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 67519
+      },
+      "connector_net": "B34_L24P",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "85",
+          "line": 106768
+        },
+        {
+          "component": "R196",
+          "pin": "1",
+          "line": 109981
+        }
+      ]
+    },
+    {
+      "channel": "A",
+      "bit": 2,
+      "adc_net": "ADC2A",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "27",
+          "line": 108406
+        },
+        {
+          "component": "R201",
+          "pin": "2",
+          "line": 110010
+        }
+      ],
+      "series_resistor": "R201",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 67659
+      },
+      "connector_net": "B34_L24N",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "86",
+          "line": 106767
+        },
+        {
+          "component": "R201",
+          "pin": "1",
+          "line": 110011
+        }
+      ]
+    },
+    {
+      "channel": "A",
+      "bit": 3,
+      "adc_net": "ADC3A",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "29",
+          "line": 108412
+        },
+        {
+          "component": "R199",
+          "pin": "2",
+          "line": 109998
+        }
+      ],
+      "series_resistor": "R199",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 67603
+      },
+      "connector_net": "B34_L19P",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "87",
+          "line": 106766
+        },
+        {
+          "component": "R199",
+          "pin": "1",
+          "line": 109999
+        }
+      ]
+    },
+    {
+      "channel": "A",
+      "bit": 4,
+      "adc_net": "ADC4A",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "30",
+          "line": 108413
+        },
+        {
+          "component": "R200",
+          "pin": "2",
+          "line": 110004
+        }
+      ],
+      "series_resistor": "R200",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 67631
+      },
+      "connector_net": "B34_L19N",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "88",
+          "line": 106765
+        },
+        {
+          "component": "R200",
+          "pin": "1",
+          "line": 110005
+        }
+      ]
+    },
+    {
+      "channel": "A",
+      "bit": 5,
+      "adc_net": "ADC5A",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "31",
+          "line": 108414
+        },
+        {
+          "component": "R197",
+          "pin": "2",
+          "line": 109986
+        }
+      ],
+      "series_resistor": "R197",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 67547
+      },
+      "connector_net": "B34_IO0",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "89",
+          "line": 106764
+        },
+        {
+          "component": "R197",
+          "pin": "1",
+          "line": 109987
+        }
+      ]
+    },
+    {
+      "channel": "A",
+      "bit": 6,
+      "adc_net": "ADC6A",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "32",
+          "line": 108415
+        },
+        {
+          "component": "R198",
+          "pin": "2",
+          "line": 109992
+        }
+      ],
+      "series_resistor": "R198",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 67575
+      },
+      "connector_net": "B34_L23N",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "90",
+          "line": 106763
+        },
+        {
+          "component": "R198",
+          "pin": "1",
+          "line": 109993
+        }
+      ]
+    },
+    {
+      "channel": "A",
+      "bit": 7,
+      "adc_net": "ADC7A",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "33",
+          "line": 108430
+        },
+        {
+          "component": "R160",
+          "pin": "1",
+          "line": 109873
+        }
+      ],
+      "series_resistor": "R160",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 67015
+      },
+      "connector_net": "B34_L23P",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "91",
+          "line": 106762
+        },
+        {
+          "component": "R160",
+          "pin": "2",
+          "line": 109872
+        }
+      ]
+    },
+    {
+      "channel": "A",
+      "bit": 8,
+      "adc_net": "ADC8A",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "34",
+          "line": 108431
+        },
+        {
+          "component": "R159",
+          "pin": "1",
+          "line": 109867
+        }
+      ],
+      "series_resistor": "R159",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 66987
+      },
+      "connector_net": "B34_L13N",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "92",
+          "line": 106761
+        },
+        {
+          "component": "R159",
+          "pin": "2",
+          "line": 109866
+        }
+      ]
+    },
+    {
+      "channel": "A",
+      "bit": 9,
+      "adc_net": "ADC9A",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "35",
+          "line": 108429
+        },
+        {
+          "component": "R158",
+          "pin": "1",
+          "line": 109861
+        }
+      ],
+      "series_resistor": "R158",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 66959
+      },
+      "connector_net": "B34_L13P",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "93",
+          "line": 106760
+        },
+        {
+          "component": "R158",
+          "pin": "2",
+          "line": 109860
+        }
+      ]
+    },
+    {
+      "channel": "A",
+      "bit": 10,
+      "adc_net": "ADC10A",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "36",
+          "line": 108428
+        },
+        {
+          "component": "R157",
+          "pin": "1",
+          "line": 109855
+        }
+      ],
+      "series_resistor": "R157",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 66931
+      },
+      "connector_net": "B34_L14N",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "94",
+          "line": 106759
+        },
+        {
+          "component": "R157",
+          "pin": "2",
+          "line": 109854
+        }
+      ]
+    },
+    {
+      "channel": "A",
+      "bit": 11,
+      "adc_net": "ADC11A",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "38",
+          "line": 108426
+        },
+        {
+          "component": "R155",
+          "pin": "1",
+          "line": 109849
+        }
+      ],
+      "series_resistor": "R155",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 66903
+      },
+      "connector_net": "B34_L14P",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "95",
+          "line": 106758
+        },
+        {
+          "component": "R155",
+          "pin": "2",
+          "line": 109848
+        }
+      ]
+    },
+    {
+      "channel": "A",
+      "bit": 12,
+      "adc_net": "ADC12A",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "39",
+          "line": 108425
+        },
+        {
+          "component": "R154",
+          "pin": "1",
+          "line": 109843
+        }
+      ],
+      "series_resistor": "R154",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 66875
+      },
+      "connector_net": "B34_L15N",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "6",
+          "line": 106847
+        },
+        {
+          "component": "R154",
+          "pin": "2",
+          "line": 109842
+        }
+      ]
+    },
+    {
+      "channel": "A",
+      "bit": 13,
+      "adc_net": "ADC13A",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "40",
+          "line": 108424
+        },
+        {
+          "component": "R153",
+          "pin": "1",
+          "line": 109837
+        }
+      ],
+      "series_resistor": "R153",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 66847
+      },
+      "connector_net": "B34_L15P",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "7",
+          "line": 106846
+        },
+        {
+          "component": "R153",
+          "pin": "2",
+          "line": 109836
+        }
+      ]
+    },
+    {
+      "channel": "A",
+      "bit": 14,
+      "adc_net": "ADC14A",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "41",
+          "line": 108423
+        },
+        {
+          "component": "R152",
+          "pin": "1",
+          "line": 109831
+        }
+      ],
+      "series_resistor": "R152",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 66819
+      },
+      "connector_net": "B34_IO25",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "8",
+          "line": 106845
+        },
+        {
+          "component": "R152",
+          "pin": "2",
+          "line": 109830
+        }
+      ]
+    },
+    {
+      "channel": "A",
+      "bit": 15,
+      "adc_net": "ADC15A",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "42",
+          "line": 108421
+        },
+        {
+          "component": "R151",
+          "pin": "1",
+          "line": 109825
+        }
+      ],
+      "series_resistor": "R151",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 66791
+      },
+      "connector_net": "B34_L12N",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "9",
+          "line": 106844
+        },
+        {
+          "component": "R151",
+          "pin": "2",
+          "line": 109824
+        }
+      ]
+    },
+    {
+      "channel": "B",
+      "bit": 0,
+      "adc_net": "ADC0B",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "4",
+          "line": 108386
+        },
+        {
+          "component": "R161",
+          "pin": "2",
+          "line": 109878
+        }
+      ],
+      "series_resistor": "R161",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 67043
+      },
+      "connector_net": "B34_L1P",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "68",
+          "line": 106785
+        },
+        {
+          "component": "R161",
+          "pin": "1",
+          "line": 109879
+        }
+      ]
+    },
+    {
+      "channel": "B",
+      "bit": 1,
+      "adc_net": "ADC1B",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "5",
+          "line": 108387
+        },
+        {
+          "component": "R162",
+          "pin": "2",
+          "line": 109884
+        }
+      ],
+      "series_resistor": "R162",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 67071
+      },
+      "connector_net": "B34_L2P",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "69",
+          "line": 106784
+        },
+        {
+          "component": "R162",
+          "pin": "1",
+          "line": 109885
+        }
+      ]
+    },
+    {
+      "channel": "B",
+      "bit": 2,
+      "adc_net": "ADC2B",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "6",
+          "line": 108388
+        },
+        {
+          "component": "R163",
+          "pin": "2",
+          "line": 109890
+        }
+      ],
+      "series_resistor": "R163",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 67099
+      },
+      "connector_net": "B34_L2N",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "70",
+          "line": 106783
+        },
+        {
+          "component": "R163",
+          "pin": "1",
+          "line": 109891
+        }
+      ]
+    },
+    {
+      "channel": "B",
+      "bit": 3,
+      "adc_net": "ADC3B",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "7",
+          "line": 108389
+        },
+        {
+          "component": "R164",
+          "pin": "2",
+          "line": 109896
+        }
+      ],
+      "series_resistor": "R164",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 67127
+      },
+      "connector_net": "B34_L6P",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "71",
+          "line": 106782
+        },
+        {
+          "component": "R164",
+          "pin": "1",
+          "line": 109897
+        }
+      ]
+    },
+    {
+      "channel": "B",
+      "bit": 4,
+      "adc_net": "ADC4B",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "8",
+          "line": 108398
+        },
+        {
+          "component": "R165",
+          "pin": "2",
+          "line": 109902
+        }
+      ],
+      "series_resistor": "R165",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 67155
+      },
+      "connector_net": "B34_L6N",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "72",
+          "line": 106781
+        },
+        {
+          "component": "R165",
+          "pin": "1",
+          "line": 109903
+        }
+      ]
+    },
+    {
+      "channel": "B",
+      "bit": 5,
+      "adc_net": "ADC5B",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "9",
+          "line": 108399
+        },
+        {
+          "component": "R166",
+          "pin": "2",
+          "line": 109908
+        }
+      ],
+      "series_resistor": "R166",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 67183
+      },
+      "connector_net": "B34_L20P",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "82",
+          "line": 106771
+        },
+        {
+          "component": "R166",
+          "pin": "1",
+          "line": 109909
+        }
+      ]
+    },
+    {
+      "channel": "B",
+      "bit": 6,
+      "adc_net": "ADC6B",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "11",
+          "line": 108401
+        },
+        {
+          "component": "R185",
+          "pin": "2",
+          "line": 109914
+        }
+      ],
+      "series_resistor": "R185",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 67211
+      },
+      "connector_net": "B34_L9N",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "81",
+          "line": 106772
+        },
+        {
+          "component": "R185",
+          "pin": "1",
+          "line": 109915
+        }
+      ]
+    },
+    {
+      "channel": "B",
+      "bit": 7,
+      "adc_net": "ADC7B",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "12",
+          "line": 108405
+        },
+        {
+          "component": "R186",
+          "pin": "2",
+          "line": 109920
+        }
+      ],
+      "series_resistor": "R186",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 67239
+      },
+      "connector_net": "B34_L9P",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "80",
+          "line": 106773
+        },
+        {
+          "component": "R186",
+          "pin": "1",
+          "line": 109921
+        }
+      ]
+    },
+    {
+      "channel": "B",
+      "bit": 8,
+      "adc_net": "ADC8B",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "13",
+          "line": 108408
+        },
+        {
+          "component": "R187",
+          "pin": "2",
+          "line": 109926
+        }
+      ],
+      "series_resistor": "R187",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 67267
+      },
+      "connector_net": "B34_L5N",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "79",
+          "line": 106774
+        },
+        {
+          "component": "R187",
+          "pin": "1",
+          "line": 109927
+        }
+      ]
+    },
+    {
+      "channel": "B",
+      "bit": 9,
+      "adc_net": "ADC9B",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "14",
+          "line": 108409
+        },
+        {
+          "component": "R188",
+          "pin": "2",
+          "line": 109932
+        }
+      ],
+      "series_resistor": "R188",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 67295
+      },
+      "connector_net": "B34_L5P",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "78",
+          "line": 106775
+        },
+        {
+          "component": "R188",
+          "pin": "1",
+          "line": 109933
+        }
+      ]
+    },
+    {
+      "channel": "B",
+      "bit": 10,
+      "adc_net": "ADC10B",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "15",
+          "line": 108411
+        },
+        {
+          "component": "R189",
+          "pin": "2",
+          "line": 109938
+        }
+      ],
+      "series_resistor": "R189",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 67323
+      },
+      "connector_net": "B34_L11N",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "77",
+          "line": 106776
+        },
+        {
+          "component": "R189",
+          "pin": "1",
+          "line": 109939
+        }
+      ]
+    },
+    {
+      "channel": "B",
+      "bit": 11,
+      "adc_net": "ADC11B",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "16",
+          "line": 108410
+        },
+        {
+          "component": "R190",
+          "pin": "2",
+          "line": 109944
+        }
+      ],
+      "series_resistor": "R190",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 67351
+      },
+      "connector_net": "B34_L11P",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "76",
+          "line": 106777
+        },
+        {
+          "component": "R190",
+          "pin": "1",
+          "line": 109945
+        }
+      ]
+    },
+    {
+      "channel": "B",
+      "bit": 12,
+      "adc_net": "ADC12B",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "17",
+          "line": 108402
+        },
+        {
+          "component": "R193",
+          "pin": "2",
+          "line": 109962
+        }
+      ],
+      "series_resistor": "R193",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 67435
+      },
+      "connector_net": "B13_L17P",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "63",
+          "line": 106790
+        },
+        {
+          "component": "R193",
+          "pin": "1",
+          "line": 109963
+        }
+      ]
+    },
+    {
+      "channel": "B",
+      "bit": 13,
+      "adc_net": "ADC13B",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "18",
+          "line": 108390
+        },
+        {
+          "component": "R194",
+          "pin": "2",
+          "line": 109968
+        }
+      ],
+      "series_resistor": "R194",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 67463
+      },
+      "connector_net": "B13_L12P",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "64",
+          "line": 106789
+        },
+        {
+          "component": "R194",
+          "pin": "1",
+          "line": 109969
+        }
+      ]
+    },
+    {
+      "channel": "B",
+      "bit": 14,
+      "adc_net": "ADC14B",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "20",
+          "line": 108392
+        },
+        {
+          "component": "R191",
+          "pin": "2",
+          "line": 109950
+        }
+      ],
+      "series_resistor": "R191",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 67379
+      },
+      "connector_net": "B13_L12N",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "65",
+          "line": 106788
+        },
+        {
+          "component": "R191",
+          "pin": "1",
+          "line": 109951
+        }
+      ]
+    },
+    {
+      "channel": "B",
+      "bit": 15,
+      "adc_net": "ADC15B",
+      "adc_endpoints": [
+        {
+          "component": "U64",
+          "pin": "21",
+          "line": 108393
+        },
+        {
+          "component": "R192",
+          "pin": "2",
+          "line": 109956
+        }
+      ],
+      "series_resistor": "R192",
+      "resistor_value": {
+        "value": "33Ω",
+        "line": 67407
+      },
+      "connector_net": "B34_L1N",
+      "connector_net_endpoints": [
+        {
+          "component": "CN1",
+          "pin": "67",
+          "line": 106786
+        },
+        {
+          "component": "R192",
+          "pin": "1",
+          "line": 109957
+        }
+      ]
+    }
+  ],
+  "checks": {
+    "distinct_adc_connector_nets": 32,
+    "adc_paths_traced": 32,
+    "rbias_resistor_to_ground": true
+  }
+}
