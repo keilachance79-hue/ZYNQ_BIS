@@ -1,0 +1,4 @@
+/build/
+/.Xil/
+/*.pb
+/xsim.dir/

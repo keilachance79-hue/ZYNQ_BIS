@@ -1,0 +1,1 @@
+PHASE4_POLAR_PASS frames=41 records=369 core_results=642 max_cycles=890

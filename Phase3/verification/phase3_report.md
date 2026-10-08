@@ -35,4 +35,6 @@
 - 首次综合脚本在 IP 生成后切换 checkpoint 属性，产生输出产品 stale 提示；最终脚本将该属性提前设置，并成功重新生成 IP。前后仿真/综合 wrapper 的 SHA-256 完全相同，确认未改变本次被测 IP 的逻辑配置。
 - Vivado 工程的 testbench 源扫描耗时较长，最终重建流程直接使用 xvlog/xvhdl/xelab/xsim 调用安装目录中的真实 IP 仿真库。不是用软件 FFT 替代 HDL 仿真。
 
-硬件改板候选、实际装配、电气波形、DCO 路由、转换 epoch、PS/DMA 和板级实现均保持未验收，见 [硬件重点问题](../../docs/hardware_blockers.md)。Phase4 CORDIC 尚未开始。
+硬件改板候选、实际装配、电气波形、DCO 路由、转换 epoch、PS/DMA 和板级实现均保持未验收，见 [硬件重点问题](../../docs/hardware_blockers.md)。
+
+2026-10-08 后续交接：用户已授权开始 [Phase4 CORDIC](../../Phase4/README.md)。本报告原有 Phase3 数字测试结果保持不变，[未决问题](../open_issues.md)继续跟踪。

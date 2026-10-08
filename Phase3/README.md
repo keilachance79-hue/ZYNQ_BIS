@@ -1,5 +1,7 @@
 # Phase3：2048 点 FFT 与九频点复数结果
 
+> 2026-10-08 交接：[仍存在的问题与关闭条件](open_issues.md)已记录。用户授权启动 [Phase4 CORDIC](../Phase4/README.md)，不改变本阶段板级未验收状态。
+
 本阶段在用户 2026-10-08 授权后启动，先完成数字处理模块。**[硬件重点问题](../docs/hardware_blockers.md)保持 OPEN；Phase2 实物采集、对齐、PS/DMA 和整板验收尚未完成。**本阶段不包含 CORDIC、阻抗标定、MUX 扫描或可下载 bitstream。
 
 ## 数据路径与数值定义

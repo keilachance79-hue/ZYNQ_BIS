@@ -1,0 +1,80 @@
+{
+  "stage": "Phase4 digital CORDIC subsystem",
+  "date": "2026-10-08",
+  "simulation": "PASS",
+  "vendor_bit_exact": "PASS",
+  "exported_csv": "PASS",
+  "sine_convention": "PASS",
+  "synthesis_out_of_context": "PASS",
+  "internal_timing": "PASS",
+  "wns_ns": 3.036,
+  "tns_ns": 0.0,
+  "whs_ns": 0.158,
+  "resources": {
+    "lut": 2644.0,
+    "ff": 1644.0,
+    "dsp": 0.0,
+    "bram_tile": 0.0
+  },
+  "frames": 41,
+  "vi_records": 369,
+  "core_outputs_compared": 642,
+  "max_simulation_frame_cycles": 890,
+  "target_clock_hz": 100000000,
+  "sine_amplitude_max_error_adc_codes": 0.0164794921875,
+  "sine_initial_phase_max_error_rad": 2.0428511757764056e-06,
+  "sine_amplitude_budget_adc_codes": 0.05,
+  "sine_phase_budget_rad": 1e-05,
+  "same_phase_record_indices": [
+    179,
+    186
+  ],
+  "board_implementation": "NOT_RUN",
+  "live_phase2_phase3_phase4_rtl": "NOT_RUN",
+  "ps_dma": "NOT_RUN",
+  "bench": "NOT_RUN",
+  "tools": {
+    "vivado": "2020.2",
+    "python": "3.12.14"
+  },
+  "source_sha256_lf": {
+    "rtl/phase4_polar_top.sv": "4f9d1ed6f964e16d26c8d7f1cf2583f393ccc0d34a904a6d2d3fd4e3dd165f51",
+    "sim/tb_phase4_polar.sv": "33467adc6b10cf8b11f19ae4bc418435d7d9664601d9ef2bdc5aa34f3c24031f",
+    "scripts/create_project.tcl": "08336951b8a836fe8365ca8de9f4bf69221a6a2322913c701579920aa4cd74c2",
+    "scripts/export_verification.py": "b8618ac8ca41defbadd3a4917eb5af71a25663bab276b3d3a2704011429d2531",
+    "scripts/generate_fixtures.py": "c51e2073597136e955c2551928a37ed7776c33b4e51552a3267fa282dbc752cb",
+    "scripts/run_phase4.ps1": "9d69a4352e3555683e6bb920ff13fe215e265591c2236d0e211627ed1e6335e1",
+    "scripts/run_synth.tcl": "76e1587e6d7f239887b314d902359c06a1d7e579a9a1dc0d3e7a59b41d9a7b58",
+    "scripts/run_xsim.ps1": "813757328244f7b2c37c91242c7a714157d20aab654d86d8f6555817a6cf7f3b",
+    "constraints/digital_ooc.xdc": "1078e9c85e55507b89a266e47217e712ace5c7c27626c828437e29feded94e4f"
+  },
+  "reference": {
+    "records": 369,
+    "frames": 41,
+    "phase3_records": 171,
+    "cordic_calls": 642,
+    "max_amplitude_error_adc_codes": 0.00024560242309235036,
+    "max_phase_error_rad": 1.92843319091196e-09,
+    "amplitude_budget_adc_codes": 0.005,
+    "phase_budget_rad": 1e-07,
+    "phase3_csv_sha256": "a44e82846b350b459e2f433aa0b56cb885ebd5a25f23b426d2ab9fd59b9faa18",
+    "phase3_csv_lf_sha256": "ea0deb04ec6c6430106c7d639163546a803eeb331ea4c1dbae2b769ef525ee76",
+    "cmodel_zip_sha256": "6b8a8c686ced16432dcc2135f8c5df5a822fdd9a29116c74d7e2f13fdb6b8e2a",
+    "input_sha256": "8b293636b31ae62aa40c816adc4721ea4b77c8f893c24fd1b754ada376261575",
+    "expected_sha256": "96f8a33ffeec905c6f5cbf90ad3028bfe6900338fe4863047ace2ff8e3445244",
+    "core_sha256": "b0717f94aa2babe223a0eeeb071f98bf2b6f8c1033a57956b4ed7e84c552fac3",
+    "model_config": {
+      "function": 1,
+      "coarse": 1,
+      "data": 0,
+      "phase": 0,
+      "input": 32,
+      "output": 32,
+      "iterations": 0,
+      "precision": 0,
+      "round": 3,
+      "scale": 1,
+      "debug": 0
+    }
+  }
+}
