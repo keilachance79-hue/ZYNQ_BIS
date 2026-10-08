@@ -1,0 +1,241 @@
+{
+  "stage": "Phase3 digital FFT subsystem",
+  "date": "2026-10-08",
+  "simulation": "PASS",
+  "vendor_bit_exact": "PASS",
+  "selected_bin_csv": "PASS",
+  "synthesis_out_of_context": "PASS",
+  "wns_ns": 5.576,
+  "tns_ns": 0.0,
+  "whs_ns": 0.166,
+  "internal_timing": "PASS",
+  "board_implementation": "NOT_RUN",
+  "phase2_live_rtl_integration": "NOT_RUN",
+  "ps_dma": "NOT_RUN",
+  "bench": "NOT_RUN",
+  "frames": 19,
+  "complex_outputs_compared": 77824,
+  "selected_vi_pairs": 171,
+  "max_simulation_frame_cycles": 20764,
+  "target_clock_hz": 100000000,
+  "tools": {
+    "vivado": "2020.2",
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "source_sha256": {
+    "rtl/phase3_fft_top.sv": "50c1a7231bc487e676d08f8503677645acd9bf432cc0639b2d1e82eb67b8437c",
+    "sim/tb_phase3_fft.sv": "f4b30b908a3980b06e49b5b70e06973a7c5559b5b797baca86646901acd70f10",
+    "scripts/create_project.tcl": "43c4ab2a5bf22369a7f6262c3aebf5dd95db12395c3e0721730066eb5b44253e",
+    "scripts/export_verification.py": "4bca2bfef00f3d2c75eb5b334e585dc4ed96d44db03ef4b4f53dcf7ee74283e2",
+    "scripts/generate_fixtures.py": "77b07e12351c48aded08eba0ffd47188149b0f21f22bad672127189e63fbdc6c",
+    "scripts/run_phase3.ps1": "19681cb8a02e8518deef954f5206cf883703c72a07c43431779cb3db91b14b3d",
+    "scripts/run_synth.tcl": "12a59f11e4770d23726b61b119a4fda1ce88fac6ed4938992c021414a5086487",
+    "scripts/run_xsim.ps1": "66be9afb44fef6436c90ae21e01e730dd9a0364fb83979fed777dd211accbafc",
+    "constraints/digital_ooc.xdc": "94b2b3f0de635f90faea28b6cc4511b3f17dcc4091b6eba05ad1109a4b41540c"
+  },
+  "reference": {
+    "n": 2048,
+    "bins": [
+      2,
+      3,
+      7,
+      11,
+      19,
+      37,
+      61,
+      113,
+      199
+    ],
+    "frames": [
+      {
+        "frame": 0,
+        "id": 100,
+        "name": "zero",
+        "max_complex_error_codes": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "frame": 1,
+        "id": 101,
+        "name": "dc_extremes",
+        "max_complex_error_codes": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "frame": 2,
+        "id": 102,
+        "name": "sine_bin_2",
+        "max_complex_error_codes": [
+          27.833606015410385,
+          24.96796282526319
+        ]
+      },
+      {
+        "frame": 3,
+        "id": 103,
+        "name": "sine_bin_3",
+        "max_complex_error_codes": [
+          27.568287114216808,
+          31.50863750915777
+        ]
+      },
+      {
+        "frame": 4,
+        "id": 104,
+        "name": "sine_bin_7",
+        "max_complex_error_codes": [
+          24.980131362587933,
+          30.231547920570442
+        ]
+      },
+      {
+        "frame": 5,
+        "id": 105,
+        "name": "sine_bin_11",
+        "max_complex_error_codes": [
+          25.745025405968043,
+          26.762867387384045
+        ]
+      },
+      {
+        "frame": 6,
+        "id": 106,
+        "name": "sine_bin_19",
+        "max_complex_error_codes": [
+          29.228034212795034,
+          28.18447103767063
+        ]
+      },
+      {
+        "frame": 7,
+        "id": 107,
+        "name": "sine_bin_37",
+        "max_complex_error_codes": [
+          26.82495519685487,
+          28.03230387842921
+        ]
+      },
+      {
+        "frame": 8,
+        "id": 108,
+        "name": "sine_bin_61",
+        "max_complex_error_codes": [
+          29.826272507034233,
+          29.254246114063736
+        ]
+      },
+      {
+        "frame": 9,
+        "id": 109,
+        "name": "sine_bin_113",
+        "max_complex_error_codes": [
+          27.910317188119155,
+          28.006821044445072
+        ]
+      },
+      {
+        "frame": 10,
+        "id": 110,
+        "name": "sine_bin_199",
+        "max_complex_error_codes": [
+          25.834854494071617,
+          29.20435064612099
+        ]
+      },
+      {
+        "frame": 11,
+        "id": 111,
+        "name": "phase1_multisine",
+        "max_complex_error_codes": [
+          29.90189486271186,
+          26.02142287399192
+        ]
+      },
+      {
+        "frame": 12,
+        "id": 112,
+        "name": "random_full_range",
+        "max_complex_error_codes": [
+          35.71189315805961,
+          25.777333311811486
+        ]
+      },
+      {
+        "frame": 13,
+        "id": 113,
+        "name": "impulses",
+        "max_complex_error_codes": [
+          0.0,
+          2.2141602901298842
+        ]
+      },
+      {
+        "frame": 14,
+        "id": 114,
+        "name": "nyquist_extremes",
+        "max_complex_error_codes": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "frame": 15,
+        "id": 115,
+        "name": "phase2_frame_10",
+        "max_complex_error_codes": [
+          29.741038767365627,
+          36.56390634437447
+        ]
+      },
+      {
+        "frame": 16,
+        "id": 116,
+        "name": "phase2_frame_11",
+        "max_complex_error_codes": [
+          39.450769205636504,
+          36.56977333234875
+        ]
+      },
+      {
+        "frame": 17,
+        "id": 117,
+        "name": "phase2_frame_20",
+        "max_complex_error_codes": [
+          29.508160192281963,
+          26.872429214975725
+        ]
+      },
+      {
+        "frame": 18,
+        "id": 118,
+        "name": "phase2_frame_81",
+        "max_complex_error_codes": [
+          29.741038767365627,
+          36.56390634437447
+        ]
+      }
+    ],
+    "model_generics": [
+      11,
+      3,
+      0,
+      0,
+      16,
+      24,
+      0,
+      0,
+      1
+    ],
+    "float_complex_abs_budget_codes": 4096,
+    "max_complex_error_codes": 39.450769205636504,
+    "cmodel_zip_sha256": "dec14219f4f0dc678df3daf728692fab3345512f06ba49afe6946ffac56d2ab1",
+    "phase2_raw_sha256": "cb9e85fddd6cf6a28e5570569db7b1038ae57bee6e9ac2bcffad6c20a5f6c9da",
+    "input_sha256": "e1de3e71d04714a0076925f86d8813ff29e0e351f76fa809a1fb0248b413fd43",
+    "golden_sha256": "10785a42bca53734b03ad47f5c00fef17067a2c28cd90cc7cb961708c3927582"
+  }
+}

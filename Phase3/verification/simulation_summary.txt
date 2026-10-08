@@ -1,0 +1,20 @@
+FRAME_PASS frame=0 cycles=20764
+FRAME_PASS frame=1 cycles=20568
+FRAME_PASS frame=2 cycles=20487
+FRAME_PASS frame=3 cycles=20631
+FRAME_PASS frame=4 cycles=20532
+FRAME_PASS frame=5 cycles=20655
+FRAME_PASS frame=6 cycles=20490
+FRAME_PASS frame=7 cycles=20599
+FRAME_PASS frame=8 cycles=20593
+FRAME_PASS frame=9 cycles=20535
+FRAME_PASS frame=10 cycles=20651
+FRAME_PASS frame=11 cycles=20589
+FRAME_PASS frame=12 cycles=20653
+FRAME_PASS frame=13 cycles=20538
+FRAME_PASS frame=14 cycles=20682
+FRAME_PASS frame=15 cycles=20547
+FRAME_PASS frame=16 cycles=20592
+FRAME_PASS frame=17 cycles=20694
+FRAME_PASS frame=18 cycles=20626
+PHASE3_FFT_PASS frames=19 complex_outputs=77824 selected_pairs=171 max_cycles=20764

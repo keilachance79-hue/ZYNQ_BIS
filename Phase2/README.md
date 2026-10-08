@@ -1,5 +1,7 @@
 # Phase2：双 ADC 采集数字原型
 
+> **2026-10-08：[硬件重点问题](../docs/hardware_blockers.md)仍未关闭。**用户授权先启动 Phase3 FFT 数字开发；Phase2 板级/PS 验收保持待完成，见 [交接记录](docs/handoff_phase3.md)。
+
 本阶段已启动双 DCO 接收、转换样点标签、完整 V/I 帧缓存和原始数据调试出口。当前成果是**有明确相位假设的数字原型**，不是可直接下载的整板工程。Phase1 完整备份位于 [../Phase1/snapshot](../Phase1/snapshot/)，对应提交 `d6bee3667699f73031e37c1e17bad18c71062e88` 的全部 103 个受控文件。
 
 用户新增核心板原理图后，50 MHz/U18、默认 3.3 V Bank 电压得到图纸支持；但 DCOA/W8、DCOB/U8 非 SRCC/MRCC，ADC 时钟负端 U13 带 1 kΩ 下拉。完整接线候选、更正和未决项见 [hardware_review.md](docs/hardware_review.md)。未设置可执行的板级 PACKAGE_PIN/IOSTANDARD，未把未经验证的 DCO 走线限制放宽。
@@ -75,4 +77,4 @@ python Phase2/scripts/analyze_raw.py path/to/payload.bin --output spectrum.json
 
 ## 下一阶段入口
 
-先解决 ADC 时钟电气接口、RBIAS、连接器实物核验、DCO 接收资源与实际 epoch 校准，再完成板级时序/CDC、PS 调试传输和同源双路台架测试。Phase2 整体验收仍未完成，Phase3 尚未开始。
+板级验收仍需解决 ADC 时钟电气接口、RBIAS、连接器实物核验、DCO 接收资源与实际 epoch 校准，再完成板级时序/CDC、PS 调试传输和同源双路台架测试。用户已于 2026-10-08 授权先行开展 Phase3 数字处理开发，未将 Phase2 整体验收标记为完成。
