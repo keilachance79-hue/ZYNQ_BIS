@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-09",
+  "stage": "Phase5 scan controller with real Phase2 frame buffer RTL",
+  "simulation": "PASS",
+  "trace_check": "PASS",
+  "fault_scenarios": 12,
+  "cases": [
+    {
+      "electrodes": 4,
+      "frame_samples": 16,
+      "requests": 4,
+      "sample_pairs": 64,
+      "overlapped_switches": 3,
+      "buffer_wait_cycles": 256,
+      "trace_sha256_lf": "885bd3e0d7feb5b9e98ab223a0577cec542d1054b0ccbdd9631b506f53f33bc9"
+    },
+    {
+      "electrodes": 16,
+      "frame_samples": 16,
+      "requests": 208,
+      "sample_pairs": 3328,
+      "overlapped_switches": 207,
+      "buffer_wait_cycles": 256,
+      "trace_sha256_lf": "34056c83fb9a3cbf7b9d5bf42c44335e104a192a945b5ea70ac581ead7cf7314"
+    },
+    {
+      "electrodes": 32,
+      "frame_samples": 16,
+      "requests": 928,
+      "sample_pairs": 14848,
+      "overlapped_switches": 927,
+      "buffer_wait_cycles": 256,
+      "trace_sha256_lf": "36f11807da50d0ae587e1a7019d6b5fbe286b5371f6e27e4f72556d29aad4316"
+    },
+    {
+      "electrodes": 4,
+      "frame_samples": 2048,
+      "requests": 4,
+      "sample_pairs": 8192,
+      "overlapped_switches": 3,
+      "buffer_wait_cycles": 0,
+      "trace_sha256_lf": "300442832ca72c4e3418e81b587f936faa5563cc6a5fa7ea0a2a8135c05d8213"
+    }
+  ],
+  "sample_pairs_compared": 26432,
+  "resources_controller_only": {
+    "lut": 248.0,
+    "ff": 328.0,
+    "dsp": 0.0,
+    "bram_tile": 0.0
+  },
+  "wns_ns": 4.376,
+  "tns_ns": 0.0,
+  "whs_ns": 0.246,
+  "internal_timing": "PASS",
+  "clock_hz": 100000000,
+  "board_implementation": "NOT_RUN",
+  "analog_settling": "NOT_MEASURED",
+  "full_adc_fft_cordic_scan_rtl": "NOT_RUN",
+  "ps_dma": "NOT_RUN",
+  "source_sha256_lf": {
+    "rtl/phase5_scan_top.sv": "4c68d8935f336b4cc62560b5f3b9180d8ea0d2e4eb9ea8216cb349f548484496",
+    "sim/tb_phase5_scan.sv": "3b84aa56a07c17743faaf7a931d6451f9879657a0ae9f240dbddf2c67910ea8f",
+    "scripts/audit_mux.py": "828ec66fddf01af3d5affcf685eb34f5a39d1ad68f678dceba9b8e2fc5819b9e",
+    "scripts/export_verification.py": "0f87f38569b77a061fce66942b0157010b44901596d1383702bc99cb487bfe88",
+    "scripts/generate.py": "d23836b3c6d0522c1733781203b6e271391d561973fb6cbec50aed65081c38ee",
+    "scripts/run_phase5.ps1": "beef91dda9d3e2aa57350b5fcdc723db8a57f9e2b845390bd34c7cdc3f791a16",
+    "scripts/run_synth.tcl": "6dbb31bef76fb971ac43029d989b47bed5b0b8b9071225f4308feab0413b0b1e",
+    "scripts/run_xsim.ps1": "b6ef1d3854d6ae71f1d93ed3ab839fa5e3ad747ba6f44eb69be57243e5279c44",
+    "constraints/digital_ooc.xdc": "850da724e004ae7a219180ea04f2b917bb58fb39ff80420d6f98d9459265a973",
+    "generated/electrode_map.h": "87bbd6022d92dce6954e2883e82130d70cfe7619fafc7c0ae8701e3123494ff9",
+    "generated/electrode_map.sv": "a05224291f1e22d14ec8fad31ea28e4706d74228a1d427ace94197e86bfc651e",
+    "generated/scan_16.csv": "a4b68c2045fb69bd95646d3c1cc297fb760fc25aed918310a1d5f95bcebb8e6f",
+    "generated/scan_32.csv": "fb2b161ea42e3ea6a36a2b97294dc47add25fcb4976a97307bb1c139aa8db8a1",
+    "generated/scan_4.csv": "35ae0959dc150389f951ab6edd4b1bc63e7f1ef8ea53e77961d7e3ada3f585df",
+    "config/electrode_map.json": "1dc5b5835ba0baf041e98975d809edae7cc6997625fbf0dfcde031e5cc7b167e",
+    "../Phase2/rtl/adc_frame_buffer.sv": "02758e5b52fa3661a927ffb57de6c1f5a73116a8a090cc80c647f1fe9f5b1c46"
+  }
+}

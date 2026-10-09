@@ -1,0 +1,6 @@
+FAULT_PASS cases=12
+SCAN_PASS N=4 frame_samples=16 requests=4 samples=64 overlaps=3 stalls=256
+SCAN_PASS N=16 frame_samples=16 requests=208 samples=3328 overlaps=207 stalls=256
+SCAN_PASS N=4 frame_samples=2048 requests=4 samples=8192 overlaps=3 stalls=0
+SCAN_PASS N=32 frame_samples=16 requests=928 samples=14848 overlaps=927 stalls=256
+PHASE5_SCAN_PASS

@@ -1,0 +1,1099 @@
+{
+  "source_name": "ProPrj_zynq底板_2026-10-07.epro2",
+  "source_sha256": "fca3bc7e851741406f6394ad9d7fc3d7d059038d3c7da6f4d0d54c223384a769",
+  "pcb_uuid": "585f0d4e5ddb4537b2b87cf8e89f1097",
+  "method": "Final PCB PAD_NET records, not copper/assembly connectivity or vendor ERC.",
+  "electrode_to_db": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32
+  ],
+  "electrode_order_evidence": "User confirmed E1->DB1 sequentially through E32->DB32 on 2026-10-09; continuity not measured.",
+  "roles": {
+    "I+": {
+      "db": {
+        "12": {
+          "pin": 1,
+          "source": 12,
+          "address": 11,
+          "net": "DB12",
+          "line": 107836
+        },
+        "11": {
+          "pin": 2,
+          "source": 11,
+          "address": 10,
+          "net": "DB11",
+          "line": 107837
+        },
+        "10": {
+          "pin": 3,
+          "source": 10,
+          "address": 9,
+          "net": "DB10",
+          "line": 107838
+        },
+        "9": {
+          "pin": 4,
+          "source": 9,
+          "address": 8,
+          "net": "DB9",
+          "line": 107839
+        },
+        "8": {
+          "pin": 5,
+          "source": 8,
+          "address": 7,
+          "net": "DB8",
+          "line": 107840
+        },
+        "7": {
+          "pin": 6,
+          "source": 7,
+          "address": 6,
+          "net": "DB7",
+          "line": 107841
+        },
+        "6": {
+          "pin": 7,
+          "source": 6,
+          "address": 5,
+          "net": "DB6",
+          "line": 107842
+        },
+        "5": {
+          "pin": 8,
+          "source": 5,
+          "address": 4,
+          "net": "DB5",
+          "line": 107843
+        },
+        "4": {
+          "pin": 9,
+          "source": 4,
+          "address": 3,
+          "net": "DB4",
+          "line": 107844
+        },
+        "3": {
+          "pin": 10,
+          "source": 3,
+          "address": 2,
+          "net": "DB3",
+          "line": 107845
+        },
+        "2": {
+          "pin": 11,
+          "source": 2,
+          "address": 1,
+          "net": "DB2",
+          "line": 107846
+        },
+        "1": {
+          "pin": 12,
+          "source": 1,
+          "address": 0,
+          "net": "DB1",
+          "line": 107847
+        },
+        "13": {
+          "pin": 45,
+          "source": 16,
+          "address": 15,
+          "net": "DB13",
+          "line": 107880
+        },
+        "14": {
+          "pin": 46,
+          "source": 15,
+          "address": 14,
+          "net": "DB14",
+          "line": 107881
+        },
+        "15": {
+          "pin": 47,
+          "source": 14,
+          "address": 13,
+          "net": "DB15",
+          "line": 107882
+        },
+        "16": {
+          "pin": 48,
+          "source": 13,
+          "address": 12,
+          "net": "DB16",
+          "line": 107883
+        },
+        "17": {
+          "pin": 25,
+          "source": 17,
+          "address": 16,
+          "net": "DB17",
+          "line": 107860
+        },
+        "18": {
+          "pin": 26,
+          "source": 18,
+          "address": 17,
+          "net": "DB18",
+          "line": 107861
+        },
+        "19": {
+          "pin": 27,
+          "source": 19,
+          "address": 18,
+          "net": "DB19",
+          "line": 107862
+        },
+        "20": {
+          "pin": 28,
+          "source": 20,
+          "address": 19,
+          "net": "DB20",
+          "line": 107863
+        },
+        "21": {
+          "pin": 29,
+          "source": 21,
+          "address": 20,
+          "net": "DB21",
+          "line": 107864
+        },
+        "22": {
+          "pin": 30,
+          "source": 22,
+          "address": 21,
+          "net": "DB22",
+          "line": 107865
+        },
+        "23": {
+          "pin": 31,
+          "source": 23,
+          "address": 22,
+          "net": "DB23",
+          "line": 107866
+        },
+        "24": {
+          "pin": 32,
+          "source": 24,
+          "address": 23,
+          "net": "DB24",
+          "line": 107867
+        },
+        "25": {
+          "pin": 33,
+          "source": 25,
+          "address": 24,
+          "net": "DB25",
+          "line": 107868
+        },
+        "26": {
+          "pin": 34,
+          "source": 26,
+          "address": 25,
+          "net": "DB26",
+          "line": 107869
+        },
+        "27": {
+          "pin": 35,
+          "source": 27,
+          "address": 26,
+          "net": "DB27",
+          "line": 107870
+        },
+        "28": {
+          "pin": 36,
+          "source": 28,
+          "address": 27,
+          "net": "DB28",
+          "line": 107871
+        },
+        "29": {
+          "pin": 37,
+          "source": 29,
+          "address": 28,
+          "net": "DB29",
+          "line": 107872
+        },
+        "30": {
+          "pin": 38,
+          "source": 30,
+          "address": 29,
+          "net": "DB30",
+          "line": 107873
+        },
+        "31": {
+          "pin": 39,
+          "source": 31,
+          "address": 30,
+          "net": "DB31",
+          "line": 107874
+        },
+        "32": {
+          "pin": 40,
+          "source": 32,
+          "address": 31,
+          "net": "DB32",
+          "line": 107875
+        }
+      },
+      "address_pins": {
+        "A0": {
+          "net": "B35_L19N",
+          "line": 107850
+        },
+        "A1": {
+          "net": "B35_L19P",
+          "line": 107851
+        },
+        "A2": {
+          "net": "B35_IO0",
+          "line": 107852
+        },
+        "A3": {
+          "net": "B35_IO25",
+          "line": 107853
+        },
+        "A4": {
+          "net": "B35_L11N",
+          "line": 107854
+        }
+      },
+      "controls": {
+        "CS": {
+          "net": "GND",
+          "line": 107855
+        },
+        "WR": {
+          "net": "GND",
+          "line": 107856
+        },
+        "EN": {
+          "net": "GND",
+          "line": 107857
+        }
+      }
+    },
+    "I-": {
+      "db": {
+        "1": {
+          "pin": 1,
+          "source": 12,
+          "address": 11,
+          "net": "DB1",
+          "line": 107889
+        },
+        "2": {
+          "pin": 2,
+          "source": 11,
+          "address": 10,
+          "net": "DB2",
+          "line": 107890
+        },
+        "3": {
+          "pin": 3,
+          "source": 10,
+          "address": 9,
+          "net": "DB3",
+          "line": 107891
+        },
+        "4": {
+          "pin": 4,
+          "source": 9,
+          "address": 8,
+          "net": "DB4",
+          "line": 107892
+        },
+        "5": {
+          "pin": 5,
+          "source": 8,
+          "address": 7,
+          "net": "DB5",
+          "line": 107893
+        },
+        "6": {
+          "pin": 6,
+          "source": 7,
+          "address": 6,
+          "net": "DB6",
+          "line": 107894
+        },
+        "7": {
+          "pin": 7,
+          "source": 6,
+          "address": 5,
+          "net": "DB7",
+          "line": 107895
+        },
+        "8": {
+          "pin": 8,
+          "source": 5,
+          "address": 4,
+          "net": "DB8",
+          "line": 107896
+        },
+        "9": {
+          "pin": 9,
+          "source": 4,
+          "address": 3,
+          "net": "DB9",
+          "line": 107897
+        },
+        "10": {
+          "pin": 10,
+          "source": 3,
+          "address": 2,
+          "net": "DB10",
+          "line": 107898
+        },
+        "11": {
+          "pin": 11,
+          "source": 2,
+          "address": 1,
+          "net": "DB11",
+          "line": 107899
+        },
+        "12": {
+          "pin": 12,
+          "source": 1,
+          "address": 0,
+          "net": "DB12",
+          "line": 107900
+        },
+        "16": {
+          "pin": 45,
+          "source": 16,
+          "address": 15,
+          "net": "DB16",
+          "line": 107933
+        },
+        "15": {
+          "pin": 46,
+          "source": 15,
+          "address": 14,
+          "net": "DB15",
+          "line": 107934
+        },
+        "14": {
+          "pin": 47,
+          "source": 14,
+          "address": 13,
+          "net": "DB14",
+          "line": 107935
+        },
+        "13": {
+          "pin": 48,
+          "source": 13,
+          "address": 12,
+          "net": "DB13",
+          "line": 107936
+        },
+        "28": {
+          "pin": 25,
+          "source": 17,
+          "address": 16,
+          "net": "DB28",
+          "line": 107913
+        },
+        "27": {
+          "pin": 26,
+          "source": 18,
+          "address": 17,
+          "net": "DB27",
+          "line": 107914
+        },
+        "26": {
+          "pin": 27,
+          "source": 19,
+          "address": 18,
+          "net": "DB26",
+          "line": 107915
+        },
+        "25": {
+          "pin": 28,
+          "source": 20,
+          "address": 19,
+          "net": "DB25",
+          "line": 107916
+        },
+        "24": {
+          "pin": 29,
+          "source": 21,
+          "address": 20,
+          "net": "DB24",
+          "line": 107917
+        },
+        "23": {
+          "pin": 30,
+          "source": 22,
+          "address": 21,
+          "net": "DB23",
+          "line": 107918
+        },
+        "22": {
+          "pin": 31,
+          "source": 23,
+          "address": 22,
+          "net": "DB22",
+          "line": 107919
+        },
+        "21": {
+          "pin": 32,
+          "source": 24,
+          "address": 23,
+          "net": "DB21",
+          "line": 107920
+        },
+        "20": {
+          "pin": 33,
+          "source": 25,
+          "address": 24,
+          "net": "DB20",
+          "line": 107921
+        },
+        "19": {
+          "pin": 34,
+          "source": 26,
+          "address": 25,
+          "net": "DB19",
+          "line": 107922
+        },
+        "18": {
+          "pin": 35,
+          "source": 27,
+          "address": 26,
+          "net": "DB18",
+          "line": 107923
+        },
+        "17": {
+          "pin": 36,
+          "source": 28,
+          "address": 27,
+          "net": "DB17",
+          "line": 107924
+        },
+        "29": {
+          "pin": 37,
+          "source": 29,
+          "address": 28,
+          "net": "DB29",
+          "line": 107925
+        },
+        "30": {
+          "pin": 38,
+          "source": 30,
+          "address": 29,
+          "net": "DB30",
+          "line": 107926
+        },
+        "31": {
+          "pin": 39,
+          "source": 31,
+          "address": 30,
+          "net": "DB31",
+          "line": 107927
+        },
+        "32": {
+          "pin": 40,
+          "source": 32,
+          "address": 31,
+          "net": "DB32",
+          "line": 107928
+        }
+      },
+      "address_pins": {
+        "A0": {
+          "net": "B35_L23P",
+          "line": 107903
+        },
+        "A1": {
+          "net": "B35_L23N",
+          "line": 107904
+        },
+        "A2": {
+          "net": "B35_L20P",
+          "line": 107905
+        },
+        "A3": {
+          "net": "B35_L20N",
+          "line": 107906
+        },
+        "A4": {
+          "net": "B35_L11P",
+          "line": 107907
+        }
+      },
+      "controls": {
+        "CS": {
+          "net": "GND",
+          "line": 107908
+        },
+        "WR": {
+          "net": "GND",
+          "line": 107909
+        },
+        "EN": {
+          "net": "GND",
+          "line": 107910
+        }
+      }
+    },
+    "V+": {
+      "db": {
+        "1": {
+          "pin": 1,
+          "source": 12,
+          "address": 11,
+          "net": "DB1",
+          "line": 107941
+        },
+        "2": {
+          "pin": 2,
+          "source": 11,
+          "address": 10,
+          "net": "DB2",
+          "line": 107942
+        },
+        "3": {
+          "pin": 3,
+          "source": 10,
+          "address": 9,
+          "net": "DB3",
+          "line": 107943
+        },
+        "4": {
+          "pin": 4,
+          "source": 9,
+          "address": 8,
+          "net": "DB4",
+          "line": 107944
+        },
+        "5": {
+          "pin": 5,
+          "source": 8,
+          "address": 7,
+          "net": "DB5",
+          "line": 107945
+        },
+        "6": {
+          "pin": 6,
+          "source": 7,
+          "address": 6,
+          "net": "DB6",
+          "line": 107946
+        },
+        "7": {
+          "pin": 7,
+          "source": 6,
+          "address": 5,
+          "net": "DB7",
+          "line": 107947
+        },
+        "8": {
+          "pin": 8,
+          "source": 5,
+          "address": 4,
+          "net": "DB8",
+          "line": 107948
+        },
+        "9": {
+          "pin": 9,
+          "source": 4,
+          "address": 3,
+          "net": "DB9",
+          "line": 107949
+        },
+        "10": {
+          "pin": 10,
+          "source": 3,
+          "address": 2,
+          "net": "DB10",
+          "line": 107950
+        },
+        "11": {
+          "pin": 11,
+          "source": 2,
+          "address": 1,
+          "net": "DB11",
+          "line": 107951
+        },
+        "12": {
+          "pin": 12,
+          "source": 1,
+          "address": 0,
+          "net": "DB12",
+          "line": 107952
+        },
+        "16": {
+          "pin": 45,
+          "source": 16,
+          "address": 15,
+          "net": "DB16",
+          "line": 107985
+        },
+        "15": {
+          "pin": 46,
+          "source": 15,
+          "address": 14,
+          "net": "DB15",
+          "line": 107986
+        },
+        "14": {
+          "pin": 47,
+          "source": 14,
+          "address": 13,
+          "net": "DB14",
+          "line": 107987
+        },
+        "13": {
+          "pin": 48,
+          "source": 13,
+          "address": 12,
+          "net": "DB13",
+          "line": 107988
+        },
+        "28": {
+          "pin": 25,
+          "source": 17,
+          "address": 16,
+          "net": "DB28",
+          "line": 107965
+        },
+        "27": {
+          "pin": 26,
+          "source": 18,
+          "address": 17,
+          "net": "DB27",
+          "line": 107966
+        },
+        "26": {
+          "pin": 27,
+          "source": 19,
+          "address": 18,
+          "net": "DB26",
+          "line": 107967
+        },
+        "25": {
+          "pin": 28,
+          "source": 20,
+          "address": 19,
+          "net": "DB25",
+          "line": 107968
+        },
+        "24": {
+          "pin": 29,
+          "source": 21,
+          "address": 20,
+          "net": "DB24",
+          "line": 107969
+        },
+        "23": {
+          "pin": 30,
+          "source": 22,
+          "address": 21,
+          "net": "DB23",
+          "line": 107970
+        },
+        "22": {
+          "pin": 31,
+          "source": 23,
+          "address": 22,
+          "net": "DB22",
+          "line": 107971
+        },
+        "21": {
+          "pin": 32,
+          "source": 24,
+          "address": 23,
+          "net": "DB21",
+          "line": 107972
+        },
+        "20": {
+          "pin": 33,
+          "source": 25,
+          "address": 24,
+          "net": "DB20",
+          "line": 107973
+        },
+        "19": {
+          "pin": 34,
+          "source": 26,
+          "address": 25,
+          "net": "DB19",
+          "line": 107974
+        },
+        "18": {
+          "pin": 35,
+          "source": 27,
+          "address": 26,
+          "net": "DB18",
+          "line": 107975
+        },
+        "17": {
+          "pin": 36,
+          "source": 28,
+          "address": 27,
+          "net": "DB17",
+          "line": 107976
+        },
+        "29": {
+          "pin": 37,
+          "source": 29,
+          "address": 28,
+          "net": "DB29",
+          "line": 107977
+        },
+        "30": {
+          "pin": 38,
+          "source": 30,
+          "address": 29,
+          "net": "DB30",
+          "line": 107978
+        },
+        "31": {
+          "pin": 39,
+          "source": 31,
+          "address": 30,
+          "net": "DB31",
+          "line": 107979
+        },
+        "32": {
+          "pin": 40,
+          "source": 32,
+          "address": 31,
+          "net": "DB32",
+          "line": 107980
+        }
+      },
+      "address_pins": {
+        "A0": {
+          "net": "B35_L24P",
+          "line": 107955
+        },
+        "A1": {
+          "net": "B35_L22N",
+          "line": 107956
+        },
+        "A2": {
+          "net": "B35_L22P",
+          "line": 107957
+        },
+        "A3": {
+          "net": "B35_L21N",
+          "line": 107958
+        },
+        "A4": {
+          "net": "B35_L21P",
+          "line": 107959
+        }
+      },
+      "controls": {
+        "CS": {
+          "net": "GND",
+          "line": 107960
+        },
+        "WR": {
+          "net": "GND",
+          "line": 107961
+        },
+        "EN": {
+          "net": "GND",
+          "line": 107962
+        }
+      }
+    },
+    "V-": {
+      "db": {
+        "1": {
+          "pin": 1,
+          "source": 12,
+          "address": 11,
+          "net": "DB1",
+          "line": 107993
+        },
+        "2": {
+          "pin": 2,
+          "source": 11,
+          "address": 10,
+          "net": "DB2",
+          "line": 107994
+        },
+        "3": {
+          "pin": 3,
+          "source": 10,
+          "address": 9,
+          "net": "DB3",
+          "line": 107995
+        },
+        "4": {
+          "pin": 4,
+          "source": 9,
+          "address": 8,
+          "net": "DB4",
+          "line": 107996
+        },
+        "5": {
+          "pin": 5,
+          "source": 8,
+          "address": 7,
+          "net": "DB5",
+          "line": 107997
+        },
+        "6": {
+          "pin": 6,
+          "source": 7,
+          "address": 6,
+          "net": "DB6",
+          "line": 107998
+        },
+        "7": {
+          "pin": 7,
+          "source": 6,
+          "address": 5,
+          "net": "DB7",
+          "line": 107999
+        },
+        "8": {
+          "pin": 8,
+          "source": 5,
+          "address": 4,
+          "net": "DB8",
+          "line": 108000
+        },
+        "9": {
+          "pin": 9,
+          "source": 4,
+          "address": 3,
+          "net": "DB9",
+          "line": 108001
+        },
+        "10": {
+          "pin": 10,
+          "source": 3,
+          "address": 2,
+          "net": "DB10",
+          "line": 108002
+        },
+        "11": {
+          "pin": 11,
+          "source": 2,
+          "address": 1,
+          "net": "DB11",
+          "line": 108003
+        },
+        "12": {
+          "pin": 12,
+          "source": 1,
+          "address": 0,
+          "net": "DB12",
+          "line": 108004
+        },
+        "16": {
+          "pin": 45,
+          "source": 16,
+          "address": 15,
+          "net": "DB16",
+          "line": 108037
+        },
+        "15": {
+          "pin": 46,
+          "source": 15,
+          "address": 14,
+          "net": "DB15",
+          "line": 108038
+        },
+        "14": {
+          "pin": 47,
+          "source": 14,
+          "address": 13,
+          "net": "DB14",
+          "line": 108039
+        },
+        "13": {
+          "pin": 48,
+          "source": 13,
+          "address": 12,
+          "net": "DB13",
+          "line": 108040
+        },
+        "17": {
+          "pin": 25,
+          "source": 17,
+          "address": 16,
+          "net": "DB17",
+          "line": 108017
+        },
+        "18": {
+          "pin": 26,
+          "source": 18,
+          "address": 17,
+          "net": "DB18",
+          "line": 108018
+        },
+        "19": {
+          "pin": 27,
+          "source": 19,
+          "address": 18,
+          "net": "DB19",
+          "line": 108019
+        },
+        "20": {
+          "pin": 28,
+          "source": 20,
+          "address": 19,
+          "net": "DB20",
+          "line": 108020
+        },
+        "21": {
+          "pin": 29,
+          "source": 21,
+          "address": 20,
+          "net": "DB21",
+          "line": 108021
+        },
+        "22": {
+          "pin": 30,
+          "source": 22,
+          "address": 21,
+          "net": "DB22",
+          "line": 108022
+        },
+        "23": {
+          "pin": 31,
+          "source": 23,
+          "address": 22,
+          "net": "DB23",
+          "line": 108023
+        },
+        "24": {
+          "pin": 32,
+          "source": 24,
+          "address": 23,
+          "net": "DB24",
+          "line": 108024
+        },
+        "25": {
+          "pin": 33,
+          "source": 25,
+          "address": 24,
+          "net": "DB25",
+          "line": 108025
+        },
+        "26": {
+          "pin": 34,
+          "source": 26,
+          "address": 25,
+          "net": "DB26",
+          "line": 108026
+        },
+        "27": {
+          "pin": 35,
+          "source": 27,
+          "address": 26,
+          "net": "DB27",
+          "line": 108027
+        },
+        "28": {
+          "pin": 36,
+          "source": 28,
+          "address": 27,
+          "net": "DB28",
+          "line": 108028
+        },
+        "29": {
+          "pin": 37,
+          "source": 29,
+          "address": 28,
+          "net": "DB29",
+          "line": 108029
+        },
+        "30": {
+          "pin": 38,
+          "source": 30,
+          "address": 29,
+          "net": "DB30",
+          "line": 108030
+        },
+        "31": {
+          "pin": 39,
+          "source": 31,
+          "address": 30,
+          "net": "DB31",
+          "line": 108031
+        },
+        "32": {
+          "pin": 40,
+          "source": 32,
+          "address": 31,
+          "net": "DB32",
+          "line": 108032
+        }
+      },
+      "address_pins": {
+        "A0": {
+          "net": "B13_L15P",
+          "line": 108007
+        },
+        "A1": {
+          "net": "B13_L11N",
+          "line": 108008
+        },
+        "A2": {
+          "net": "B13_L11P",
+          "line": 108009
+        },
+        "A3": {
+          "net": "B13_L19N",
+          "line": 108010
+        },
+        "A4": {
+          "net": "B13_L19P",
+          "line": 108011
+        }
+      },
+      "controls": {
+        "CS": {
+          "net": "GND",
+          "line": 108012
+        },
+        "WR": {
+          "net": "GND",
+          "line": 108013
+        },
+        "EN": {
+          "net": "GND",
+          "line": 108014
+        }
+      }
+    }
+  }
+}

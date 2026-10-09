@@ -1,0 +1,5 @@
+index,i_plus,i_minus,v_plus,v_minus,ip_addr,in_addr,vp_addr,vn_addr
+0,1,2,3,4,0,10,9,8
+1,2,3,4,1,1,9,8,11
+2,3,4,1,2,2,8,11,10
+3,4,1,2,3,3,11,10,9
